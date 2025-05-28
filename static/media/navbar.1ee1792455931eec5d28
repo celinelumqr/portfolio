@@ -11,6 +11,9 @@ function Navbar() {
                         alt="logo"
                     />
                 </a>
+                <a href='#main' className={styles.navLogo}>
+                    
+                </a>
             </span>
         </nav>
     );
