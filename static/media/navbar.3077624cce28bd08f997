@@ -8,8 +8,8 @@ function Navbar() {
                     <img
                         src={require("../static/logo/logoapricot.png")}
                         class={styles.navIcon}
-                        >
-                    </img>
+                        alt="logo"
+                    />
                 </a>
             </span>
         </nav>
