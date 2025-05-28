@@ -12,7 +12,21 @@ function Navbar() {
                     />
                 </a>
                 <a href='#main' className={styles.navLogo}>
-                    
+                    moonforest
+                </a>
+            </span>
+            <span id={styles.navItem}>
+                <a href='#main' className={styles.navLink}>
+                    About
+                </a>
+                <a href='#games' className={styles.navLink}>
+                    Games
+                </a>
+                <a href='#projects' className={styles.navLink}>
+                    Projects
+                </a>
+                <a href='#contact' className={styles.navLink}>
+                    Contact
                 </a>
             </span>
         </nav>
