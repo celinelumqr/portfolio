@@ -5,11 +5,11 @@ function Navbar() {
         <nav id={styles.navigationBar}>
             <span id={styles.navItemLeft}>
                 <a href='#main'>
-                    <img
+                    {/* <img
                         src={require("../static/logo/logoapricot.png")}
                         class={styles.navIcon}
                         alt="logo"
-                    />
+                    /> */}
                 </a>
                 <a href='#main' className={styles.navLogo}>
                     moonforest
