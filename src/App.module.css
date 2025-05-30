@@ -8,6 +8,11 @@
 }
 
 @font-face {
+  font-family: "Klee One Bold";
+  src: url("./static/fonts/kleeone-bold.ttf");
+}
+
+@font-face {
   font-family: "M Plus";
   src: url("./static/fonts/mplus.ttf");
 }

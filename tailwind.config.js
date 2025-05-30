@@ -5,7 +5,13 @@ module.exports = {
     "./src/**/*.css"
   ],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        kleeone: ['"Klee One"', 'sans-serif'],
+        kleeonebold: ['"Klee One"', 'sans-serif'],
+        mplus: ['"M Plus"', 'sans-serif'],
+      },
+    },
   },
   plugins: [],
 }
