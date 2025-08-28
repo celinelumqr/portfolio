@@ -1,31 +1,35 @@
 export const projects = [
   {
-    title: "Mobile Game #1",
-    description: "A puzzle-based mobile game I helped design during my internship.",
-    image: "/images/mobile-game1.png",
-    role: "Game Designer",
-    tech: ["Unity", "C#", "Android"],
+    title: "Butter Royale",
+    description: "A family-friendly food fight battle royale, developed by Mighty Bear Games and released on Apple Arcade.",
+    longDescription: "During my internship at Mighty Bear Games, I contributed to the design team of *Butter Royale*, a whimsical battle royale game available on iOS, iPadOS, macOS, and tvOS through Apple Arcade. My work focused on designing quality-of-life features to improve player retention, such as a replay system and limited-time event mechanics. While the game was retired from Apple Arcade in 2022, it remains a valuable experience where I learned about live game development, collaboration across teams, and player-centered design.",
+    image: "/images/butter-royale.jpeg", 
+    role: "Game Designer (Intern)",
+    tech: ["Game Design", "Live Ops", "Apple Arcade"],
     links: [
-      { label: "Play", url: "https://example.com" },
-      { label: "GitHub", url: "https://github.com" }
+      { label: "Apple Arcade Page (archived)", url: "https://apps.apple.com/us/app/butter-royale/id1464623715" }
     ]
   },
   {
-    title: "Game Jam Project",
-    description: "A fun project created in 48 hours during a game jam.",
-    longDescription:
-      "This project was built in Unity during the 2023 Global Game Jam. I handled programming the core gameplay loop, integrating art, and balancing game difficulty.",
-    image: "/images/gamejam.png",
-    screenshots: [
-      "/images/gamejam-screen1.png",
-      "/images/gamejam-screen2.png"
-    ],
-    video: "https://www.youtube.com/embed/YOUR_VIDEO_ID", // embed link
-    role: "Programmer & Designer",
-    tech: ["Unity", "C#"],
+    title: "Disney Melee Mania",
+    description: "A 3v3 multiplayer online battle arena (MOBA) featuring Disney and Pixar characters, developed by Mighty Bear Games for Apple Arcade.",
+    longDescription: "As part of my internship with Mighty Bear Games, I contributed to the design team for *Disney Melee Mania*, a fast-paced multiplayer online battle arena released exclusively on Apple Arcade. My role involved designing unique character abilities (including concepts for Frozone and Moana), as well as a power-up system that was prototyped internally. While not all designs made it into the final game due to licensing priorities, this experience gave me valuable insight into designing around beloved IPs, balancing gameplay for live service titles, and working within the constraints of collaborative, cross-disciplinary teams.",
+    image: "/images/disney-melee-mania.jpeg",
+    role: "Game Designer (Intern)",
+    tech: ["Game Design", "Character Design", "Live Ops", "Apple Arcade"],
     links: [
-      { label: "Itch.io", url: "https://itch.io" }
+      { label: "Apple Arcade Page (archived)", url: "https://apps.apple.com/us/app/disney-melee-mania/id1544934886" }
+    ]
+  },
+  {
+    title: "Mirror's Memento",
+    description: "A puzzle game about outsmarting your own doppelganger in a mysterious dungeon.",
+    longDescription: "Developed as part of a university course on game design, *Mirror's Memento* is a puzzle game where players must outwit their doppelganger to escape each room. Every move the protagonist makes is mirrored by the doppelganger in a parallel room, and progress requires using traps and environmental quirks to eliminate the copy without dying yourself. \n\nI contributed to both design and development, creating puzzle mechanics such as light switches, room rotations, and conveyor belts. I also implemented an AI hint system that analyzes the player's current state and computes the next optimal move toward victory. Beyond programming, I wrote the full narrative lore, all flavor text and level names, and scripted the intro/outro cutscenes in Unity.",
+    image: "/images/mirrors-memento.png",
+    role: "Game Designer & Programmer",
+    tech: ["Unity", "C#", "Puzzle Design", "Narrative Design"],
+    links: [
+      { label: "Play on Itch.io", url: "https://kleinkodes.itch.io/doppelganger" }
     ]
   }
-  // ... Add the rest later
 ];
