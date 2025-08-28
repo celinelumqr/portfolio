@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/moonforest/static/css/main.d65b0e8e.css",
-    "main.js": "/moonforest/static/js/main.c937c4cc.js",
+    "main.css": "/moonforest/static/css/main.f5be9dfc.css",
+    "main.js": "/moonforest/static/js/main.c957e762.js",
     "static/js/453.430c425c.chunk.js": "/moonforest/static/js/453.430c425c.chunk.js",
     "index.html": "/moonforest/index.html",
-    "main.d65b0e8e.css.map": "/moonforest/static/css/main.d65b0e8e.css.map",
-    "main.c937c4cc.js.map": "/moonforest/static/js/main.c937c4cc.js.map",
+    "main.f5be9dfc.css.map": "/moonforest/static/css/main.f5be9dfc.css.map",
+    "main.c957e762.js.map": "/moonforest/static/js/main.c957e762.js.map",
     "453.430c425c.chunk.js.map": "/moonforest/static/js/453.430c425c.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.d65b0e8e.css",
-    "static/js/main.c937c4cc.js"
+    "static/css/main.f5be9dfc.css",
+    "static/js/main.c957e762.js"
   ]
 }
