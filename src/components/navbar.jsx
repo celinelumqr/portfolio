@@ -1,8 +1,9 @@
 import React, { useState, useEffect } from 'react';
-import logo from "../assets/moonforest-logo.png";
+import { Menu, X } from "lucide-react";
 
 const Navbar = () => {
     const [activeSection, setActiveSection] = useState('about');
+    const [menuOpen, setMenuOpen] = useState(false);
 
     useEffect(() => {
     const sections = document.querySelectorAll('section');
@@ -26,13 +27,31 @@ const Navbar = () => {
 
 
     return (
-        <nav className="navbar">
-            <h1 className="logo"><a href="#about">MoonForest</a></h1>
+        <nav className={`navbar ${menuOpen ? "open" : ""}`}>
+            <h1 className="logo flex items-center space-x-2">
+                <a href="#about" className="flex items-center space-x-2">
+                    <img
+                        src="/moonforest-logo.png"
+                        alt="moonforest Logo"
+                        className="h-8 w-8"
+                    />
+                    <span>moonforest</span>
+                </a>
+            </h1>
+
+            <button
+                className="menu-toggle"
+                onClick={() => setMenuOpen(!menuOpen)}
+            >
+                {menuOpen ? <X size={28} /> : <Menu size={28} />}
+            </button>
+
             <ul className="nav-links">
               <li>
                 <a 
                   href="#about" 
-                  className={activeSection === "about" ? "active" : ""}
+                        className={activeSection === "about" ? "active" : ""}
+                        onClick={() => setMenuOpen(false)}
                 >
                   About
                 </a>
@@ -40,7 +59,8 @@ const Navbar = () => {
               <li>
                 <a 
                   href="#projects" 
-                  className={activeSection === "projects" ? "active" : ""}
+                        className={activeSection === "projects" ? "active" : ""}
+                        onClick={() => setMenuOpen(false)}
                 >
                   Projects
                 </a>
@@ -48,7 +68,8 @@ const Navbar = () => {
               <li>
                 <a 
                   href="#resume" 
-                  className={activeSection === "resume" ? "active" : ""}
+                        className={activeSection === "resume" ? "active" : ""}
+                        onClick={() => setMenuOpen(false)}
                 >
                   Resume
                 </a>
@@ -56,7 +77,8 @@ const Navbar = () => {
               <li>
                 <a 
                   href="#contact" 
-                  className={activeSection === "contact" ? "active" : ""}
+                        className={activeSection === "contact" ? "active" : ""}
+                        onClick={() => setMenuOpen(false)}
                 >
                   Contact
                 </a>
