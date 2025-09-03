@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Menu, X } from "lucide-react";
+import logo from "../assets/moonforest-border.png";
 
 const Navbar = () => {
     const [activeSection, setActiveSection] = useState('about');
@@ -30,11 +31,7 @@ const Navbar = () => {
         <nav className={`navbar ${menuOpen ? "open" : ""}`}>
             <h1 className="logo flex items-center space-x-2">
                 <a href="#about" className="flex items-center space-x-2">
-                    <img
-                        src="/moonforest-logo.png"
-                        alt="moonforest Logo"
-                        className="h-8 w-8"
-                    />
+                    <img src={logo} alt="moonforest logo" className="h-16 w-16" />
                     <span>moonforest</span>
                 </a>
             </h1>
