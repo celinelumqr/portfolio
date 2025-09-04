@@ -31,5 +31,51 @@ export const projects = [
     links: [
       { label: "Play on Itch.io", url: "https://kleinkodes.itch.io/doppelganger" }
     ]
-  }
+    },
+    {
+        title: "Anamnesis",
+        description: "A puzzle-platformer where past-life ghosts replay your actions to help solve environmental challenges.",
+        longDescription: "Originally created as part of the *Develop at Ubisoft* program, *Anamnesis* is a 2D puzzle-platformer centered on the concept of 'remembering' past lives. Each time the player dies, they respawn alongside a ghostly apparition that replays their previous actions in real-time. Players must use these ghosts strategically to press switches, hold platforms, distract enemies, and solve puzzles that require precise timing and planning. \n\nThe prototype was initially coded in C++ over a single weekend using Ubisoft’s custom API. To expand on the idea, I rebuilt the game in Unity, refining mechanics, improving controls, and adding level content. This project was an exercise in both rapid prototyping and full-cycle development, from concept to a playable Unity build.",
+        image: "/images/anamnesis.png", 
+        role: "Programmer & Designer",
+        tech: ["Unity", "C#", "C++ (prototype)", "Game Design"],
+        links: [
+            { label: "Play Prototype", url: "https://your-prototype-link.com" }, 
+            { label: "Play Unity Build", url: "https://your-unity-build-link.com" }
+        ]
+    },
+    {
+        title: "Golfers of the Galaxy",
+        description: "A physics-based minigolf game set among rotating planets with unique gravity fields.",
+        longDescription: "Created for the *Ubisoft Next 2025 Programming Competition*, *Golfers of the Galaxy* is a 2D physics-based minigolf game where players launch a golf ball across a solar system of rotating planets, each with its own gravitational pull. Success requires mastering timing, trajectory, and momentum to sink the ball into the goal without losing it in space.\n\nThe original prototype was developed in C++ over one weekend using Ubisoft’s custom API. After the competition, I rebuilt the game in Unity to refine the physics, expand the level design, and create a more polished experience. While the project didn’t advance in the competition, it provided valuable experience with physics programming, prototyping under time constraints, and adapting designs across different engines.",
+        image: "/images/golfers-galaxy.png",
+        role: "Programmer & Designer",
+        tech: ["Unity", "C#", "C++ (prototype)", "Physics Programming"],
+        links: [
+            { label: "Play Unity Build", url: "https://your-itch-link.com" }, 
+            { label: "Prototype (C++)", url: "https://your-prototype-link.com" } 
+        ]
+    },
+    {
+        title: "Webster Booster",
+        description: "A 2.5D arcade bug-chasing game where players hunt green bugs, avoid hazards, and zip around with web-powered boosts.",
+        longDescription: "*Webster Booster* was created in 48 hours for the 2025 GMTK Game Jam. It’s a fast-paced arcade-style game where players must follow arrows to hunt down green bugs while dodging red ones. Looping around yellow bugs grants a speed boost, adding another layer of strategy to movement and positioning.\n\nMy contributions focused on visual effects, UI systems, and interactivity. I created all VFX in Unity’s particle system (combo effects, boosts, jetpack states, prey death, hazard collisions/respawns). I also built the interactive main menu (which doubles as a movement test area) and designed the fuel bar system, which depletes during movement and refills when all enemies in a wave are cleared.",
+        image: "/images/webster-booster.png",
+        role: "Programmer & VFX Designer",
+        tech: ["Unity", "C#", "Particle System", "UI"],
+        links: [
+            { label: "Play on Itch.io", url: "https://noorilu.itch.io/webster-booster" }
+        ]
+    },
+    {
+        title: "The Doughfather",
+        description: "A cookie-themed pachinko game where you risk your biscuits to pay off a debt.",
+        longDescription: "Created in one week for the 2025 Brackeys Game Jam, *The Doughfather* is a 2.5D pachinko-inspired game with a quirky cookie theme. Players drop cookies into a pachinko board, trying their luck to pay off an ever-growing debt, all while navigating humorous flavor text and playful narrative beats.\n\nMy contributions included writing the full narrative and flavor text (premise, intro, win/lose screens, and pause menu quips), integrating art assets into the game, and building the cookie spawning/dragging system (click the jar to spawn a cookie, drag to move it, release to drop it). I also added polish features such as camera shake on bucket drops and invisible walls to prevent cookies from flying off the board.",
+        image: "/images/doughfather.png", 
+        role: "Programmer & Narrative Designer",
+        tech: ["Godot", "GDScript", "Narrative Design", "2.5D"],
+        links: [
+            { label: "Play on Itch.io", url: "https://your-itch-link.com" } 
+        ]
+    }
 ];
