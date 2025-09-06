@@ -2,3 +2,30 @@
 @tailwind components;
 @tailwind utilities;
 
+@font-face {
+    font-family: "KleeOne";
+    src: url("./static/fonts/KleeOne-SemiBold.ttf");
+}
+
+@font-face {
+    font-family: "ZenMaruGothic";
+    src: url("./static/fonts/ZenMaruGothic-Light.ttf");
+}
+
+@font-face {
+    font-family: "ZenMaruGothicBold";
+    src: url("./static/fonts/ZenMaruGothic-Medium.ttf");
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.appContainer {
+    @apply min-h-screen;
+}
+
+.bodyContainer {
+    @apply flex flex-col items-center justify-center;
+    overflow-x: hidden;
+}
