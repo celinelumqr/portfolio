@@ -1,86 +1,37 @@
 import React, { useState } from "react";
-import { Menu, X } from "lucide-react";
-import logo from "../assets/moonforest-border.png";
+import { Link, NavLink } from "react-router-dom"
+import styles from "./navbar.module.css";
 
-const Navbar = () => {
-    const [activeSection, setActiveSection] = useState('about');
-    const [menuOpen, setMenuOpen] = useState(false);
-
-    useEffect(() => {
-    const sections = document.querySelectorAll('section');
-    const observer = new IntersectionObserver(
-      (entries) => {
-        entries.forEach((entry) => {
-          if (entry.isIntersecting) {
-            setActiveSection(entry.target.id);
-          }
-        });
-      },
-      { threshold: 0.6 } // 60% of section visible
-    );
-
-    sections.forEach((section) => observer.observe(section));
-
-    return () => {
-      sections.forEach((section) => observer.unobserve(section));
-    };
-  }, []);
-
-
+function Navbar() {
     return (
-        <nav className={`navbar ${menuOpen ? "open" : ""}`}>
-            <h1 className="logo flex items-center space-x-2">
-                <a href="#about" className="flex items-center space-x-2">
-                    <img src={logo} alt="moonforest logo" className="h-16 w-16" />
-                    <span>moonforest</span>
+        <nav id={styles.navigationBar}>
+            <span id={styles.navItemLeft}>
+                <a href='#about'>
+                    <img
+                        src={require("../static/logo/moonforest-border.png")}
+                        className={styles.navIcon}
+                        alt="logo"
+                    />
                 </a>
-            </h1>
+                <a href='#about' className={styles.navLogo}>
+                    moonforest
+                </a>
+            </span>
 
-            <button
-                className="menu-toggle"
-                onClick={() => setMenuOpen(!menuOpen)}
-            >
-                {menuOpen ? <X size={28} /> : <Menu size={28} />}
-            </button>
-
-            <ul className="nav-links">
-              <li>
-                <a 
-                  href="#about" 
-                        className={activeSection === "about" ? "active" : ""}
-                        onClick={() => setMenuOpen(false)}
-                >
-                  About
+            <span id={styles.navItem}>
+                <a href='#about' className={styles.navLink}>
+                    About
                 </a>
-              </li>
-              <li>
-                <a 
-                  href="#projects" 
-                        className={activeSection === "projects" ? "active" : ""}
-                        onClick={() => setMenuOpen(false)}
-                >
-                  Projects
+                <a href='#projects' className={styles.navLink}>
+                    Projects
                 </a>
-              </li>
-              <li>
-                <a 
-                  href="#resume" 
-                        className={activeSection === "resume" ? "active" : ""}
-                        onClick={() => setMenuOpen(false)}
-                >
-                  Resume
+                <a href='#resume' className={styles.navLink}>
+                    Resume
                 </a>
-              </li>
-              <li>
-                <a 
-                  href="#contact" 
-                        className={activeSection === "contact" ? "active" : ""}
-                        onClick={() => setMenuOpen(false)}
-                >
-                  Contact
+                <a href='#contact' className={styles.navLink}>
+                    Contact
                 </a>
-              </li>
-            </ul>
+            </span>
         </nav>
     );
 }
