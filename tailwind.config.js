@@ -11,8 +11,9 @@ module.exports = {
               star: "#fcd34d",
           },
           fontFamily: {
-              heading: ["'Fredoka One'", "cursive"],
-              body: ["'Inter'", "sans-serif"],
+              klee: ['KleeOne', 'sans-serif'],
+              zen: ['ZenMaruGothic', 'sans-serif'],
+              zenbold: ['ZenMaruGothicBold', 'sans-serif'],
           },
       },
   },
