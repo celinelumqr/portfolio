@@ -8,7 +8,7 @@ function Navbar() {
             <span id={styles.navItemLeft}>
                 <a href='#about'>
                     <img
-                        src={require("../static/logo/moonforest-border.png")}
+                        src={require("../static/images/moonforest-logo.png")}
                         className={styles.navIcon}
                         alt="logo"
                     />

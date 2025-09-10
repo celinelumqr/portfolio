@@ -15,21 +15,21 @@
 }
 
 .headerLight {
-    @apply text-6xl font-gilroy font-medium text-[#CDE0EB];
+    @apply text-6xl font-zen font-medium text-[#CDE0EB];
 }
 
 .headerBold {
-    @apply text-6xl font-gilroybold text-[#CDE0EB];
+    @apply text-6xl font-zenbold text-[#CDE0EB];
 }
 
 .headerOutlined {
-    @apply text-6xl font-gilroybold text-[#CDE0EB];
+    @apply text-6xl font-zenbold text-[#CDE0EB];
     -webkit-text-fill-color: transparent;
     -webkit-text-stroke: 2px;
 }
 
 .paragraph {
-    @apply text-base font-gilroy font-medium pt-2 text-[#5C6064];
+    @apply text-base font-zen font-medium pt-2 text-[#5C6064];
 }
 
 .contacts {

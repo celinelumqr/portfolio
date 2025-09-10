@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import styles from "./about.module.css";
-import Link from "../components/links"
+import Link from "../components/link"
 
 function About() {
     const [isMobile, setIsMobile] = useState(window.innerWidth <= 768);
@@ -100,3 +100,5 @@ function About() {
         </body>
     );
 }
+
+export default About;
