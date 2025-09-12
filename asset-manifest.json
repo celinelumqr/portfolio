@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/moonforest/static/css/main.23e7c781.css",
+    "main.css": "/moonforest/static/css/main.5bc05d4f.css",
     "main.js": "/moonforest/static/js/main.7119e309.js",
     "static/js/453.430c425c.chunk.js": "/moonforest/static/js/453.430c425c.chunk.js",
     "static/media/KleeOne-SemiBold.ttf": "/moonforest/static/media/KleeOne-SemiBold.75cfca2ca029417bc9f5.ttf",
@@ -8,12 +8,12 @@
     "static/media/ZenMaruGothic-Light.ttf": "/moonforest/static/media/ZenMaruGothic-Light.6f506e79cfbb29456565.ttf",
     "static/media/moonforest-logo.png": "/moonforest/static/media/moonforest-logo.ed5c1001f0de30d69f1c.png",
     "index.html": "/moonforest/index.html",
-    "main.23e7c781.css.map": "/moonforest/static/css/main.23e7c781.css.map",
+    "main.5bc05d4f.css.map": "/moonforest/static/css/main.5bc05d4f.css.map",
     "main.7119e309.js.map": "/moonforest/static/js/main.7119e309.js.map",
     "453.430c425c.chunk.js.map": "/moonforest/static/js/453.430c425c.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.23e7c781.css",
+    "static/css/main.5bc05d4f.css",
     "static/js/main.7119e309.js"
   ]
 }
