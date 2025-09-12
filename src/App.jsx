@@ -2,10 +2,11 @@ import React from 'react';
 import styles from "./App.module.css";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import Navbar from "./components/navbar";
-import About from './pages/about';
-import Projects from './pages/projects';
-import Resume from './pages/resume';
-import Contact from './pages/contact';
+import Main from './pages/main';
+//import About from './pages/about';
+//import Projects from './pages/projects';
+//import Resume from './pages/resume';
+//import Contact from './pages/contact';
 
 function App() {
     return (
@@ -15,18 +16,21 @@ function App() {
                     <Navbar />
                 </div>
                 <div className={styles.bodyContainer}>
-                    <section id="about">
-                        <About />
+                    <section id="main">
+                        <Main />
                     </section>
-                    <section id="projects">
-                        <Projects />
-                    </section>
-                    <section id="resume">
-                        <Resume />
-d                    </section>
-                    <section id="contact">
-                        <Contact />
-                    </section>
+{/*                    <section id="about">*/}
+{/*                        <About />*/}
+{/*                    </section>*/}
+{/*                    <section id="projects">*/}
+{/*                        <Projects />*/}
+{/*                    </section>*/}
+{/*                    <section id="resume">*/}
+{/*                        <Resume />*/}
+{/*d                    </section>*/}
+{/*                    <section id="contact">*/}
+{/*                        <Contact />*/}
+{/*                    </section>*/}
                 </div>
             </Router>
         </div>

@@ -1,8 +1,8 @@
 import { useEffect, useState } from "react";
-import styles from "./about.module.css";
+import styles from "./main.module.css";
 import Link from "../components/link"
 
-function About() {
+function Main() {
     const [isMobile, setIsMobile] = useState(window.innerWidth <= 768);
 
     useEffect(() => {
@@ -16,59 +16,43 @@ function About() {
             window.removeEventListener("resize", handleResize);
         };
     }, []);
-
     return (
         <body>
             <div className={styles.body}>
                 {isMobile && (
                     <img
-                        className={styles.avatarImage}
+                        className={styles.landingImage}
                         src={require("../static/images/avatar.png")}
-                        alt="about"
+                        alt="home"
                     />
                 )}
                 <div className={styles.bodyItem}>
                     <div className={styles.aboutme}>
-                        <h1 className={styles.header}>
-                            About Me
+                        <h1 className={styles.headerLight}>
+                            Hello, I'm
+                            <span className={styles.headerBold}> Celine, </span>
+                            a
+                            <span className={styles.headerBold}> Computer Science</span>
+                            <span className={styles.headerOutlined}> graduate </span>
+                            from the
+                            <span className={styles.headerBold}> University of Toronto.</span>
                         </h1>
                         <p className={styles.paragraph}>
-                            Hi! I’m
-                        </p>
-                        <p className={styles.paragraphHighlight}>
-                            Celine
+                            I am currently on my co-op term working as a full-stack developer at Bell.
                         </p>
                         <p className={styles.paragraph}>
-                            , a recent Computer Science graduate and aspiring game developer.
+                            While pursuing my studies at the University of Toronto,
+                            my academic pursuits exposed me to various facets of Computer Science,
+                            from web development to machine learning and artificial intelligence, as well as data structures.
                         </p>
                         <p className={styles.paragraph}>
-                            I’ve worked on everything from
-                        </p>
-                        <p className={styles.paragraphBold}>
-                            mobile games
-                        </p>
-                        <p className={styles.paragraph}>
-                            to 
-                        </p>
-                        <p className={styles.paragraphBold}>
-                            collaborative team projects
-                        </p>
-                        <p className={styles.paragraph}>
-                            and
-                        </p>
-                        <p className={styles.paragraphBold}>
-                            game jams
-                        </p>
-                        <p className={styles.paragraph}>
-                            . I love creating playful, imaginative worlds that bring people joy, whether that means designing mechanics, building systems, or polishing the final details.
-                        </p>
-                        <p className={styles.paragraph}>
-                            Outside of coding, I enjoy exploring art, music, and storytelling: all things that inspire the cozy, whimsical spirit in me. My dream is to continue blending technology and creativity to craft games that feel like starlit adventures.
+                            As an ambitious individual who is passionate about expanding my knowledge to drive innovation, I am always seeking more opportunities to explore my interests in greater depth!
+                            I would also like to find a way to combine my passion for technology with my love for art and music.
                         </p>
 
-                        <div className={styles.links}>
+                        <div className={styles.contacts}>
                             <Link
-                                link="mailto:celinelqr@gmail.com"
+                                link="mailto:celinelqr@gmail.com@gmail.com"
                                 image={<svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="40" height="40" viewBox="0 0 30 30">
                                     <path fill="currentColor" d="M 4 5 C 2.9069372 5 2 5.9069372 2 7 L 2 23 C 2 24.093063 2.9069372 25 4 25 L 26 25 C 27.093063 25 28 24.093063 28 23 L 28 7 C 28 5.9069372 27.093063 5 26 5 L 4 5 z M 6.6992188 7 L 23.300781 7 L 15 13.134766 L 6.6992188 7 z M 5 9.4746094 L 15 16.865234 L 25 9.4746094 L 25 23 L 5 23 L 5 9.4746094 z"></path>
                                 </svg>}
@@ -88,17 +72,16 @@ function About() {
                         </div>
                     </div>
                 </div>
-
                 {!isMobile && (
                     <img
-                        className={styles.avatarImage}
+                        className={styles.landingImage}
                         src={require("../static/images/avatar.png")}
-                        alt="about"
+                        alt="home"
                     />
                 )}
             </div>
-        </body>
-    );
+        </body >
+    )
 }
 
-export default About;
+export default Main

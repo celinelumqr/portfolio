@@ -6,18 +6,17 @@ function Navbar() {
     return (
         <nav id={styles.navigationBar}>
             <span id={styles.navItemLeft}>
-                <a href='#about'>
+                <a href='#main'>
                     <img
                         src={require("../static/images/moonforest-logo.png")}
-                        className={styles.navIcon}
+                        class={styles.navIcon}
                         alt="logo"
                     />
                 </a>
-                <a href='#about' className={styles.navLogo}>
+                <a href='#main' className={styles.navLogo}>
                     moonforest
                 </a>
             </span>
-
             <span id={styles.navItem}>
                 <a href='#about' className={styles.navLink}>
                     About

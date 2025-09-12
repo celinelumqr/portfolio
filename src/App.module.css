@@ -3,17 +3,17 @@
 @tailwind utilities;
 
 @font-face {
-    font-family: "KleeOne";
+    font-family: "Klee";
     src: url("./static/fonts/KleeOne-SemiBold.ttf");
 }
 
 @font-face {
-    font-family: "ZenMaruGothic";
+    font-family: "Zen";
     src: url("./static/fonts/ZenMaruGothic-Light.ttf");
 }
 
 @font-face {
-    font-family: "ZenMaruGothicBold";
+    font-family: "ZenBold";
     src: url("./static/fonts/ZenMaruGothic-Medium.ttf");
 }
 
