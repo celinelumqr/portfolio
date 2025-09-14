@@ -1,26 +1,17 @@
 import React from "react";
 import styles from "./link.module.css";
 
-/**
- * A generic contact component
- * @module ContactComponent
- 
- @prop {String} [link] : link to contact
- @prop {String} [image] : image
- @prop {boolean} [small] : if smaller box
-**/
-
-function Contact(props) {
+function Link(props) {
     return (
         <a href={props.link}
             target="_blank"
             rel="noopener noreferrer">
             {!props.small ? (
-                <div className={styles.contactContainer}>
+                <div className={styles.linkContainer}>
                     <div className={styles.image}>{props.image}</div>
                 </div>
             ) : (
-                <div className={styles.contactContainerSmall}>
+                <div className={styles.linkContainerSmall}>
                     <div className={styles.imageSmall}>{props.image}</div>
                 </div>
             )}
@@ -28,4 +19,4 @@ function Contact(props) {
     );
 }
 
-export default Contact;
+export default Link;

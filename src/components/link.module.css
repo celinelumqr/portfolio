@@ -2,42 +2,40 @@
 @tailwind components;
 @tailwind utilities;
 
-.contactContainer {
+.linkContainer {
     @apply flex flex-col justify-between items-center align-middle w-16 h-16 rounded-lg mr-4 border-solid border-[#CDE0EB];
     border-width: 2px;
 }
 
-    .contactContainer:hover {
-        @apply bg-[#CDE0EB];
-        transition: all 0.8s;
+.linkContainer:hover {
+    @apply bg-[#CDE0EB];
+    transition: all 0.8s;
     }
 
 .image {
     @apply flex justify-center items-center h-full text-[#CDE0EB] scale-75;
 }
 
-.contactContainer:hover .image {
+.linkContainer:hover .image {
     @apply text-[#FFFFFF];
     transition: all 0.8s;
 }
 
-/* ----------------------------------------------- */
-
-.contactContainerSmall {
+.linkContainerSmall {
     @apply flex flex-col justify-between items-center align-middle w-10 h-10 rounded-lg ml-3 border-solid border-[#fff];
     border-width: 2px;
 }
 
-    .contactContainerSmall:hover {
-        @apply bg-[#fff];
-        transition: all 0.8s;
-    }
+.linkContainerSmall:hover {
+    @apply bg-[#fff];
+    transition: all 0.8s;
+}
 
 .imageSmall {
     @apply flex justify-center items-center h-full text-[#fff] scale-50;
 }
 
-.contactContainerSmall:hover .imageSmall {
+.linkContainerSmall:hover .imageSmall {
     @apply text-[#5C6064];
     transition: all 0.8s;
 }
