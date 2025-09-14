@@ -1,0 +1,50 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.projectsContainer {
+    @apply bg-[#CDE0EB] w-[100vw] flex flex-col justify-center items-center py-3;
+}
+
+.header {
+    @apply justify-center flex mb-16 mt-28;
+}
+
+.headerLight {
+    @apply text-6xl font-klee font-medium text-white;
+}
+
+.headerBold {
+    @apply text-6xl font-klee text-white;
+}
+
+.project {
+    @apply flex h-auto items-start;
+}
+
+.projects {
+}
+
+@media (max-width: 1024px) and (min-width: 768px) {
+    .headerLight, .headerBold {
+        @apply text-4xl;
+    }
+
+    .header {
+        @apply mb-8 mt-16;
+    }
+}
+
+@media (max-width: 768px) {
+    .headerLight {
+        @apply text-4xl;
+    }
+
+    .headerBold {
+        @apply text-4xl;
+    }
+
+    .header {
+        @apply mb-8 mt-16;
+    }
+}

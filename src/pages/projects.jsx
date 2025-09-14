@@ -16,7 +16,7 @@ function Projects() {
                         projectDescription="Developed a machine learning model to detect fraudulent emails using Python libraries such as Pandas, NumPy, PyTorch, and Scikit-learn.
                         Used decision trees, neural networks, naive bayes, and logistic regression to compare the performance of each model on both UofT and non-UofT email data."
                         githubLink="https://github.com/UofT-ScamBusters/UofT-Email-Fraud-Detection"
-                        image={require("../static/projects/avatar.png")}
+                        image={require("../static/images/avatar.png")}
                         showPython={true} />
                 </div>
                 <div className={styles.project}>
@@ -30,7 +30,7 @@ function Projects() {
                         githubLink="https://github.com/TeamAlligators/PetPalWeb"
                         figmaLink="https://www.figma.com/design/0w73UT6sf47n8O2RWbMT3A/PetPal?node-id=0%3A1&t=TUyck5m5TpNok3gt-1"
                         deployLink="https://pet-pal-web.vercel.app/"
-                        image={require("../static/projects/petpal.png")}
+                        image={require("../static/images/avatar.png")}
                         showReact={true}
                         showDjango={true}
                         showSQLite={true}
@@ -47,7 +47,7 @@ function Projects() {
                         githubLink="https://github.com/J-TALE/J-TALE"
                         figmaLink="https://www.figma.com/design/tjtuN40Bv3Ny9ROuWNKF51/J-TALE-project-design?node-id=0%3A1&t=Opo4bbdlv7jF5M98-1"
                         deployLink="https://jtale.netlify.app/"
-                        image={require("../static/projects/jtale.png")}
+                        image={require("../static/images/avatar.png")}
                         showReact={true}
                         showNode={true}
                         showMongoDB={true}
@@ -62,7 +62,7 @@ function Projects() {
                         projectDescription="Worked with a total of 12 UofT CS students, music students, and Centennial College game art and animation students 
                         to develop a 3D puzzle game in Unity using C#. Designed and implemented puzzles, and created animations with state machines. Ensured the codebase was clean, reusable, and scalable."
                         itchLink="https://kleinkodes.itch.io/doppelganger"
-                        image={require("../static/projects/avatar.png")}
+                        image={require("../static/images/avatar.png")}
                         showCSharp={true}
                         showUnity={true} />
                 </div>
@@ -74,7 +74,7 @@ function Projects() {
                         for the fashion industry to reduce waste and promote sustainable fashion.
                         Worked on surveying potential users to understand their needs and preferences to create a user-friendly interface."
                         figmaLink="https://www.figma.com/design/ZflAMpDOgKnbI9HOm6cZ6q/Wear-the-Change?node-id=0%3A1&t=zjS09j5VgTtj3Ipu-1"
-                        image={require("../static/projects/wearthechange.png")}
+                        image={require("../static/images/avatar.png")}
                         showFigma={true}
                     />
                 </div>
@@ -87,7 +87,7 @@ function Projects() {
                         matches your footsteps for everyday walk or run for the hackathon, Hack the North 2022.
                         Collaborated with a team of 3 to develop the app using Dart and Firebase."
                         githubLink="https://github.com/jltng/htn-2022"
-                        image={require("../static/projects/App mockup 5.png")}
+                        image={require("../static/images/avatar.png")}
                         showDart={true}
                         showFirebase={true} />
                 </div>
@@ -100,7 +100,7 @@ function Projects() {
                         Parsed the dataset and used linear regression to predict future data for COVID's impact.
                         Used Python libraries such as Pandas, NumPy, Scikit-learn, and Matplotlib."
                         githubLink="https://github.com/CS110-Project-Team/Project"
-                        image={require("../static/projects/covid.png")}
+                        image={require("../static/images/avatar.png")}
                         showPython={true} />
                 </div>
             </div>

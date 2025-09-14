@@ -1,0 +1,122 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.linkContainer {
+    @apply bg-[#CDE0EB] w-[100vw] flex flex-col justify-center items-center py-3;
+}
+
+.header {
+    @apply justify-center flex mb-16 mt-28;
+}
+
+.headerLight {
+    @apply text-6xl font-klee font-medium text-white;
+}
+
+.headerBold {
+    @apply text-6xl font-klee text-white;
+}
+
+.link {
+    @apply flex flex-row justify-center items-center py-3 mb-32;
+}
+
+.formContainer {
+    @apply flex flex-col py-3 w-full md:w-3/5;
+}
+
+.formEachContainer {
+    @apply md:flex md:items-center mb-6;
+}
+
+.inputContainer {
+    @apply w-full;
+}
+
+.input {
+    @apply font-zen appearance-none border-2 border-gray-200 rounded w-full py-2 px-4 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-[#404040]
+}
+
+.buttons {
+    @apply flex flex-row justify-center items-center;
+}
+
+.button {
+    @apply shadow bg-[#5C6064] text-white py-2 px-4 rounded font-zen;
+}
+
+.button:hover {
+    @apply bg-[#91969c];
+    transition: all 0.8s;
+}
+
+.links {
+    @apply flex flex-row;
+}
+
+.words {
+    @apply text-[#5C6064] font-zen w-[32vw] ml-10 flex flex-col content-start items-start self-start;
+}
+
+.bigLabel {
+    @apply font-bold text-5xl text-[#fff] font-klee;
+}
+
+.bigLabelOutlined {
+    @apply font-bold text-5xl text-[#fff] font-klee;
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke: 1.5px;
+}
+
+.label {
+    @apply text-sm font-zen mb-1 md:mb-0 mt-4 text-[#5C6064];
+}
+
+@media (max-width: 1024px) and (min-width: 768px) {
+    .headerLight, .headerBold, .headerOutlined {
+        @apply text-4xl;
+    }
+
+    .headerOutlined {
+        -webkit-text-stroke: 1.3px;
+    }
+}
+
+@media (max-width: 768px) {
+    .header {
+        @apply mb-8 mt-16;
+    }
+
+    .headerLight, .headerBold {
+        @apply text-4xl;
+    }
+
+    .input {
+        @apply text-sm; 
+    }
+
+    .button {
+        @apply text-sm py-2 px-4; 
+    }
+
+    .bigLabel, .bigLabelOutlined {
+        @apply text-3xl;
+    }
+
+    .bigLabelOutlined {
+        -webkit-text-stroke: 1px;
+    }
+
+    .words {
+        @apply w-[85vw] ml-0 flex flex-col content-center items-center self-center;
+    }
+
+    .link {
+        @apply w-[85vw] mb-16;
+    }
+
+    .formContainer {
+        @apply w-full;
+    }
+}
