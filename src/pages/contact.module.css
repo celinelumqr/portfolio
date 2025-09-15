@@ -11,11 +11,11 @@
 }
 
 .headerLight {
-    @apply text-6xl font-klee font-medium text-white;
+    @apply text-6xl font-quattroregular font-medium text-white;
 }
 
 .headerBold {
-    @apply text-6xl font-klee text-white;
+    @apply text-6xl font-quattrobold text-white;
 }
 
 .link {
@@ -35,7 +35,7 @@
 }
 
 .input {
-    @apply font-zen appearance-none border-2 border-gray-200 rounded w-full py-2 px-4 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-[#404040]
+    @apply font-loraregular appearance-none border-2 border-gray-200 rounded w-full py-2 px-4 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-[#404040]
 }
 
 .buttons {
@@ -43,7 +43,7 @@
 }
 
 .button {
-    @apply shadow bg-[#5C6064] text-white py-2 px-4 rounded font-zen;
+    @apply shadow bg-[#5C6064] text-white py-2 px-4 rounded font-loraregular;
 }
 
 .button:hover {
@@ -56,21 +56,21 @@
 }
 
 .words {
-    @apply text-[#5C6064] font-zen w-[32vw] ml-10 flex flex-col content-start items-start self-start;
+    @apply text-[#5C6064] font-loraregular w-[32vw] ml-10 flex flex-col content-start items-start self-start;
 }
 
 .bigLabel {
-    @apply font-bold text-5xl text-[#fff] font-klee;
+    @apply font-bold text-5xl text-[#fff] font-quattroregular;
 }
 
 .bigLabelOutlined {
-    @apply font-bold text-5xl text-[#fff] font-klee;
+    @apply font-bold text-5xl text-[#fff] font-quattrobold;
     -webkit-text-fill-color: transparent;
     -webkit-text-stroke: 1.5px;
 }
 
 .label {
-    @apply text-sm font-zen mb-1 md:mb-0 mt-4 text-[#5C6064];
+    @apply text-sm font-loraregular mb-1 md:mb-0 mt-4 text-[#5C6064];
 }
 
 @media (max-width: 1024px) and (min-width: 768px) {

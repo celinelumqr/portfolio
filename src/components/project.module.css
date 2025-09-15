@@ -16,10 +16,10 @@
     position: static;
 }
 
-    .image:hover {
-        transform: scale(1.1);
-        transition: all 0.8s;
-    }
+.image:hover {
+    transform: scale(1.1);
+    transition: all 0.8s;
+}
 
 .projectDetailsLeft {
     @apply flex flex-col justify-center w-[670px] ml-12;
@@ -30,19 +30,19 @@
 }
 
 .number {
-    @apply text-[50px] font-klee text-[#fff];
+    @apply text-[50px] font-quattroregular text-[#fff];
 }
 
 .title {
-    @apply text-[26px] font-klee text-[#fff];
+    @apply text-[26px] font-quattroregular text-[#fff];
 }
 
 .description {
-    @apply text-sm font-zen mt-1 text-[#5C6064];
+    @apply text-sm font-loraregular mt-1 text-[#5C6064];
 }
 
 .framework {
-    @apply flex flex-wrap text-xs font-zen my-1;
+    @apply flex flex-wrap text-xs font-quattroregular my-1;
 }
 
 .frameworkItemBlue {
@@ -92,7 +92,7 @@
 }
 
 .links {
-    @apply text-sm font-klee mt-1 flex font-bold;
+    @apply text-sm font-loraregular mt-1 flex font-bold;
 }
 
 .link {

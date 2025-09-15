@@ -3,18 +3,53 @@
 @tailwind utilities;
 
 @font-face {
-    font-family: "Klee";
-    src: url("./static/fonts/KleeOne-SemiBold.ttf");
+    font-family: "LoraBold";
+    src: url("./static/fonts/Lora-Bold.ttf");
 }
 
 @font-face {
-    font-family: "Zen";
-    src: url("./static/fonts/ZenMaruGothic-Light.ttf");
+    font-family: "LoraBoldItalic";
+    src: url("./static/fonts/Lora-BoldItalic.ttf");
 }
 
 @font-face {
-    font-family: "ZenBold";
-    src: url("./static/fonts/ZenMaruGothic-Medium.ttf");
+    font-family: "LoraItalic";
+    src: url("./static/fonts/Lora-Italic.ttf");
+}
+
+@font-face {
+    font-family: "LoraMedium";
+    src: url("./static/fonts/Lora-Medium.ttf");
+}
+
+@font-face {
+    font-family: "LoraMediumItalic";
+    src: url("./static/fonts/Lora-MediumItalic.ttf");
+}
+
+@font-face {
+    font-family: "LoraRegular";
+    src: url("./static/fonts/Lora-Regular.ttf");
+}
+
+@font-face {
+    font-family: "LoraSemiBold";
+    src: url("./static/fonts/Lora-SemiBold.ttf");
+}
+
+@font-face {
+    font-family: "LoraSemiBoldItalic";
+    src: url("./static/fonts/Lora-SemiBoldItalic.ttf");
+}
+
+@font-face {
+    font-family: "QuattroBold";
+    src: url("./static/fonts/Quattrocento-Bold.ttf");
+}
+
+@font-face {
+    font-family: "QuattroRegular";
+    src: url("./static/fonts/Quattrocento-Regular.ttf");
 }
 
 html {

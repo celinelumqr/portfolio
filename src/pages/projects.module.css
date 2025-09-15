@@ -11,11 +11,11 @@
 }
 
 .headerLight {
-    @apply text-6xl font-klee font-medium text-white;
+    @apply text-6xl font-quattroregular font-medium text-white;
 }
 
 .headerBold {
-    @apply text-6xl font-klee text-white;
+    @apply text-6xl font-quattrobold text-white;
 }
 
 .project {

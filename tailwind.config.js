@@ -5,9 +5,16 @@ module.exports = {
   theme: {
       extend: {
           fontFamily: {
-              klee: ['Klee', 'sans-serif'],
-              zen: ['Zen', 'sans-serif'],
-              zenbold: ['ZenBold', 'sans-serif'],
+              lorabold: ['LoraBold', 'serif'],
+              lorabolditalics: ['LoraBoldItalic', 'serif'],
+              loraitalic: ['LoraItalic', 'serif'],
+              loramedium: ['LoraMedium', 'serif'],
+              loramediumitalic: ['LoraMediumItalic', 'serif'],
+              loraregular: ['LoraRegular', 'serif'],
+              lorasemibold: ['LoraSemiBold', 'serif'],
+              lorasemibolditalic: ['LoraSemiBoldItalic', 'serif'],
+              quattrobold: ['QuattroBold', 'serif'],
+              quattroregular: ['QuattroRegular', 'serif'],
           },
       },
   },

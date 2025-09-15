@@ -8,34 +8,34 @@
 }
 
 #navItemLeft {
-    @apply flex font-klee text-4xl items-center ml-3;
+    @apply flex font-quattroregular text-4xl items-center ml-3;
 }
 
 .navLogo {
     @apply text-center px-3;
 }
 
-    .navLogo:hover {
-        @apply text-[#A5C6D8];
-        transition: 0.3s;
-    }
+.navLogo:hover {
+    @apply text-[#A5C6D8];
+    transition: 0.3s;
+}
 
 .navIcon {
     @apply h-14;
 }
 
 #navItem {
-    @apply flex flex-row justify-around items-center mr-3 font-klee text-left;
+    @apply flex flex-row justify-around items-center mr-3 font-quattroregular text-left;
 }
 
 .navLink {
     @apply text-black font-bold text-lg no-underline px-6 text-[#5C6064];
 }
 
-    .navLink:hover {
-        @apply text-[#A5C6D8];
-        transition: 0.3s;
-    }
+.navLink:hover {
+    @apply text-[#A5C6D8];
+    transition: 0.3s;
+}
 
 @media only screen and (max-width: 900px) {
     .navLogo {

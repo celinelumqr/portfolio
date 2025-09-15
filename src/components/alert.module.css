@@ -17,5 +17,5 @@
 }
 
 .text {
-    @apply font-bold text-lg text-center font-zen;
+    @apply font-bold text-lg text-center font-loraregular;
 }
