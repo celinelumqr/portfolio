@@ -17,7 +17,6 @@ function Resume() {
         };
     }, []);
     return (
-        <body>
             <div className={styles.body}>
                 {isMobile && (
                     <img
@@ -80,7 +79,6 @@ function Resume() {
                     />
                 )}
             </div>
-        </body >
     )
 }
 

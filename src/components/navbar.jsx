@@ -14,7 +14,7 @@ function Navbar() {
                     />
                 </a>
                 <a href='#main' className={styles.navLogo}>
-                    moonforest
+                    MOONFOREST
                 </a>
             </span>
             <span id={styles.navItem}>
