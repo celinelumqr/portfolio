@@ -4,7 +4,7 @@
 
 #navigationBar {
     @apply flex items-center justify-between z-10 pt-3 pb-3 px-5 fixed top-0 w-full;
-    background: rgba(255, 255, 255, 0.5);
+    background: rgba(11, 12, 42, 1);
 }
 
 #navItemLeft {

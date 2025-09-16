@@ -4,6 +4,16 @@ module.exports = {
     ],
   theme: {
       extend: {
+          colors: {
+              navy: "#0B0C2A",
+              midnight: "#1A1B3A",
+              gold: "#D4AF37",
+              softGold: "#E6C87E",
+              textLight: "#E0E0E0",
+              textMuted: "#B0B0B0",
+              glowBlue: "#4A90E2",
+              lavender: "#A49CFF",
+          },
           fontFamily: {
               lorabold: ['LoraBold', 'serif'],
               lorabolditalics: ['LoraBoldItalic', 'serif'],
