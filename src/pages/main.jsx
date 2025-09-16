@@ -71,13 +71,6 @@ function Main() {
                         </div>
                     </div>
                 </div>
-                {!isMobile && (
-                    <img
-                        className={styles.landingImage}
-                        src={require("../static/images/avatar.png")}
-                        alt="home"
-                    />
-                )}
             </div>
     )
 }
