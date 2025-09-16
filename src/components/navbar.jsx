@@ -3,30 +3,30 @@ import styles from "./navbar.module.css";
 
 function Navbar() {
     return (
-        <nav id={styles.navigationBar}>
-            <span id={styles.navItemLeft}>
+        <nav className={styles.navbar}>
+            <span className={styles.navbarLeft}>
                 <a href='#main'>
                     <img
                         src={require("../static/images/moonforest-logo.png")}
-                        class={styles.navIcon}
+                        className={styles.navbarLogo}
                         alt="logo"
                     />
                 </a>
-                <a href='#main' className={styles.navLogo}>
+                <a href='#main' className={styles.navbarBrand}>
                     MOONFOREST
                 </a>
             </span>
-            <span id={styles.navItem}>
-                <a href='#about' className={styles.navLink}>
+            <span className={styles.navbarRight}>
+                <a href='#about' className={styles.navbarLink}>
                     About
                 </a>
-                <a href='#projects' className={styles.navLink}>
+                <a href='#projects' className={styles.navbarLink}>
                     Projects
                 </a>
-                <a href='#resume' className={styles.navLink}>
+                <a href='#resume' className={styles.navbarLink}>
                     Resume
                 </a>
-                <a href='#contact' className={styles.navLink}>
+                <a href='#contact' className={styles.navbarLink}>
                     Contact
                 </a>
             </span>
