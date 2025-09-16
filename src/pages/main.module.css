@@ -2,8 +2,13 @@
 @tailwind components;
 @tailwind utilities;
 
-.body {
-    @apply flex justify-center items-center h-screen;
+.landing {
+    @apply flex justify-center items-center h-screen bg-navy;
+
+    background-image: url("../static/images/background.png");
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat;
 }
 
 .bodyItem {

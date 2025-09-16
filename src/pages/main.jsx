@@ -17,7 +17,7 @@ function Main() {
         };
     }, []);
     return (
-            <div className={styles.body}>
+            <div className={styles.landing}>
                 {isMobile && (
                     <img
                         className={styles.landingImage}

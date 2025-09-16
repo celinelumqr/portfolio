@@ -50,7 +50,7 @@
     }
 
     .navbarLink {
-        @apply text-base px-4;
+        @apply px-4 text-base;
     }
 }
 
