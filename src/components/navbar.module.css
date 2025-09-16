@@ -3,22 +3,21 @@
 @tailwind utilities;
 
 #navigationBar {
-    @apply flex items-center justify-between z-10 pt-3 pb-3 px-5 fixed top-0 w-full;
-    background: rgba(11, 12, 42, 1);
+    @apply flex items-center justify-between z-10 pt-3 pb-3 px-5 fixed top-0 w-full bg-navy;
 }
 
 #navItemLeft {
-    @apply flex font-quattroregular text-4xl items-center ml-3;
+    @apply flex font-quattroregular text-4xl items-center ml-3 text-gold;
 }
 
 .navLogo {
-    @apply text-center px-3;
+    @apply flex items-center leading-none;
 }
 
-.navLogo:hover {
-    @apply text-[#A5C6D8];
-    transition: 0.3s;
-}
+    .navLogo:hover {
+        @apply text-softGold;
+        transition: 0.3s;
+    }
 
 .navIcon {
     @apply h-14;
@@ -29,17 +28,17 @@
 }
 
 .navLink {
-    @apply text-black font-bold text-lg no-underline px-6 text-[#5C6064];
+    @apply text-black font-bold text-lg no-underline px-6 text-gold;
 }
 
-.navLink:hover {
-    @apply text-[#A5C6D8];
-    transition: 0.3s;
-}
+    .navLink:hover {
+        @apply text-softGold;
+        transition: 0.3s;
+    }
 
 @media only screen and (max-width: 900px) {
     .navLogo {
-        display: none;
+        @apply h-10 text-2xl;
     }
 }
 
@@ -51,9 +50,13 @@
     .navLink {
         @apply text-base px-4;
     }
+
+    .navLogo {
+        @apply text-xl;
+    }
 }
 
-@media only screen and (max-width: 550px) {
+@media only screen and (max-width: 620px) {
     #navItemLeft {
         @apply ml-0;
     }
@@ -69,10 +72,18 @@
     .navLink {
         @apply text-sm;
     }
+
+    .navLogo {
+        @apply mt-2 order-last;
+    }
 }
 
 @media only screen and (max-width: 420px) {
     .navLink {
         @apply px-2;
+    }
+
+    .navLogo {
+        @apply text-base;
     }
 }
