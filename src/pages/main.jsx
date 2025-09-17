@@ -1,56 +1,23 @@
-import { useEffect, useState } from "react";
 import styles from "./main.module.css";
 import Link from "../components/link"
 
 function Main() {
-    const [isMobile, setIsMobile] = useState(window.innerWidth <= 768);
-
-    useEffect(() => {
-        const handleResize = () => {
-            setIsMobile(window.innerWidth <= 768);
-        };
-
-        window.addEventListener("resize", handleResize);
-
-        return () => {
-            window.removeEventListener("resize", handleResize);
-        };
-    }, []);
     return (
-            <div className={styles.landing}>
-                {isMobile && (
-                    <img
-                        className={styles.landingImage}
-                        src={require("../static/images/avatar.png")}
-                        alt="home"
-                    />
-                )}
-                <div className={styles.bodyItem}>
-                    <div className={styles.aboutme}>
-                        <h1 className={styles.headerLight}>
-                            Hello, I'm
-                            <span className={styles.headerBold}> Celine, </span>
-                            a
-                            <span className={styles.headerBold}> Computer Science</span>
-                            <span className={styles.headerOutlined}> graduate </span>
-                            from the
-                            <span className={styles.headerBold}> University of Toronto.</span>
-                        </h1>
-                        <p className={styles.paragraph}>
-                            I am currently on my co-op term working as a full-stack developer at Bell.
-                        </p>
-                        <p className={styles.paragraph}>
-                            While pursuing my studies at the University of Toronto,
-                            my academic pursuits exposed me to various facets of Computer Science,
-                            from web development to machine learning and artificial intelligence, as well as data structures.
-                        </p>
-                        <p className={styles.paragraph}>
-                            As an ambitious individual who is passionate about expanding my knowledge to drive innovation, I am always seeking more opportunities to explore my interests in greater depth!
-                            I would also like to find a way to combine my passion for technology with my love for art and music.
-                        </p>
-
-                        <div className={styles.contacts}>
-                            <Link
+        <div className={styles.landing}>
+            <img
+                className={styles.landingAvatar}
+                src={require("../static/images/avatar.png")}
+                alt="home"
+            />
+            <div className={styles.landingText}>
+                <h1 className={styles.landingTagline}>
+                    Worlds Etched In Starlight
+                </h1>
+                <p className={styles.landingRoles}>
+                    Game Developer | Writer | Storyteller
+                </p>
+                <div className={styles.links}>
+                    <Link
                                 link="mailto:celinelqr@gmail.com@gmail.com"
                                 image={<svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="40" height="40" viewBox="0 0 30 30">
                                     <path fill="currentColor" d="M 4 5 C 2.9069372 5 2 5.9069372 2 7 L 2 23 C 2 24.093063 2.9069372 25 4 25 L 26 25 C 27.093063 25 28 24.093063 28 23 L 28 7 C 28 5.9069372 27.093063 5 26 5 L 4 5 z M 6.6992188 7 L 23.300781 7 L 15 13.134766 L 6.6992188 7 z M 5 9.4746094 L 15 16.865234 L 25 9.4746094 L 25 23 L 5 23 L 5 9.4746094 z"></path>
@@ -70,7 +37,6 @@ function Main() {
                             />
                         </div>
                     </div>
-                </div>
             </div>
     )
 }

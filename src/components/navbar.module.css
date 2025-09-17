@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 .navbar {
-    @apply fixed top-0 z-10 flex items-center justify-between w-full px-5 pt-3 pb-3 bg-navy font-quattroregular;
+    @apply fixed top-0 z-10 flex items-center justify-between w-full px-5 pt-3 pb-3 bg-navy bg-opacity-50 font-quattroregular;
 }
 
 .navbarLeft {
