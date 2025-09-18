@@ -3,16 +3,16 @@
 @tailwind utilities;
 
 .landing {
-    @apply flex justify-center items-center h-screen bg-navy;
+    @apply flex flex-col justify-center items-center h-screen w-screen bg-navy;
 
     background-image: url("../static/images/background.png");
-    background-size: cover; 
-    background-position: center; 
+    background-size: cover;
+    background-position: center;
     background-repeat: no-repeat;
 }
 
 .landingAvatar {
-    @apply max-h-screen w-auto;
+    @apply max-h-[30vh] w-auto;
 }
 
 .landingText {
@@ -20,11 +20,11 @@
 }
 
 .landingTagline {
-    @apply text-6xl font-quattroregular font-medium text-[#CDE0EB];
+    @apply text-6xl font-quattroregular font-medium text-gold;
 }
 
 .landingRoles {
-    @apply text-base font-loraregular font-medium pt-2 text-[#5C6064];
+    @apply text-base font-loraregular font-medium pt-2 text-textLight;
 }
 
 .links {
@@ -38,53 +38,45 @@
 }
 
 @media (max-width: 1024px) and (min-width: 768px) {
-    .landingTagline {
-        @apply text-4xl;
+    .landing {
+        @apply w-full max-w-none;
+    }
+
+    .landingAvatar {
+        @apply max-h-[30vh];
     }
 
     .landingText {
         @apply pt-0;
     }
 
-    .aboutme {
-        @apply w-full max-w-none;
-    }
-
-    .landingImage {
-        @apply max-h-[30vh];
+    .landingTagline {
+        @apply text-4xl;
     }
 }
 
 @media (max-width: 768px) {
-    .body {
-        @apply flex-col h-auto;
+    .landing {
+        @apply flex-col h-auto w-full max-w-none;
     }
 
-    .bodyItem {
+    .landingAvatar {
+        @apply max-h-[40vh] mt-24;
+    }
+
+    .landingText {
         @apply pt-0;
     }
 
-    .aboutme {
-        @apply w-full max-w-none;
-    }
-
-    .headerLight, .headerBold, .headerOutlined {
+    .landingTagline {
         @apply text-4xl;
     }
 
-    .headerOutlined {
-        -webkit-text-stroke: 1.3px;
-    }
-
-    .paragraph {
+    .landingRoles {
         @apply text-sm;
     }
 
-    .contacts {
+    .links {
         @apply justify-center;
-    }
-
-    .landingImage {
-        @apply max-h-[40vh] mt-24;
     }
 }
