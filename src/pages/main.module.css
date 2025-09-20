@@ -12,7 +12,7 @@
 }
 
 .landingAvatar {
-    @apply max-h-[30vh] w-auto;
+    @apply max-h-[35vh] w-auto;
 }
 
 .landingText {
@@ -31,15 +31,9 @@
     @apply flex flex-row mt-6;
 }
 
-@media (max-width: 1150px) and (min-width: 1024px) {
-    .landingAvatar {
-        @apply max-h-[35vh];
-    }
-}
-
 @media (max-width: 1024px) and (min-width: 768px) {
     .landing {
-        @apply w-full max-w-none;
+        @apply w-screen max-w-none;
     }
 
     .landingAvatar {
@@ -57,7 +51,7 @@
 
 @media (max-width: 768px) {
     .landing {
-        @apply flex-col h-auto w-full max-w-none;
+        @apply flex-col h-screen w-screen max-w-none;
     }
 
     .landingAvatar {

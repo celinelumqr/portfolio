@@ -13,29 +13,10 @@
     }
 
 .image {
-    @apply flex justify-center items-center h-full text-[#CDE0EB] scale-75;
+    @apply flex justify-center items-center h-full text-gold scale-75;
 }
 
 .linkContainer:hover .image {
-    @apply text-[#FFFFFF];
-    transition: all 0.8s;
-}
-
-.linkContainerSmall {
-    @apply flex flex-col justify-between items-center align-middle w-10 h-10 rounded-lg ml-3 border-solid border-[#fff];
-    border-width: 2px;
-}
-
-.linkContainerSmall:hover {
-    @apply bg-[#fff];
-    transition: all 0.8s;
-}
-
-.imageSmall {
-    @apply flex justify-center items-center h-full text-[#fff] scale-50;
-}
-
-.linkContainerSmall:hover .imageSmall {
-    @apply text-[#5C6064];
+    @apply text-softGold;
     transition: all 0.8s;
 }
