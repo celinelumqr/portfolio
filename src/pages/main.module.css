@@ -31,19 +31,7 @@
     @apply flex flex-row mt-6;
 }
 
-@media (max-width: 1024px) and (min-width: 768px) {
-    .landing {
-        @apply w-screen max-w-none;
-    }
-
-    .landingAvatar {
-        @apply max-h-[30vh];
-    }
-
-    .landingText {
-        @apply pt-0;
-    }
-
+@media (max-width: 920px) and (min-width: 768px) {
     .landingTagline {
         @apply text-4xl;
     }
@@ -51,11 +39,11 @@
 
 @media (max-width: 768px) {
     .landing {
-        @apply flex-col h-screen w-screen max-w-none;
+        @apply w-screen max-w-none;
     }
 
     .landingAvatar {
-        @apply max-h-[40vh] mt-24;
+        @apply max-h-[30vh] mt-24;
     }
 
     .landingText {
