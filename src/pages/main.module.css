@@ -3,20 +3,16 @@
 @tailwind utilities;
 
 .landing {
-    @apply flex flex-col justify-center items-center h-screen w-screen bg-navy;
-
-    background-image: url("../static/images/background.png");
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
+    @apply flex flex-col items-center justify-center h-screen w-screen bg-navy;
+    background: url("../static/images/background.png") center/cover no-repeat;
 }
 
 .landingAvatar {
-    @apply max-h-[35vh] w-auto;
+    @apply w-auto max-h-[35vh];
 }
 
 .landingText {
-    @apply flex items-center flex-col p-8;
+    @apply flex flex-col items-center text-center p-8;
 }
 
 .landingTagline {
@@ -24,34 +20,27 @@
 }
 
 .landingRoles {
-    @apply text-base font-loraregular font-medium pt-2 text-textLight;
+    @apply pt-2 text-base font-loraregular font-medium text-textLight;
 }
 
 .links {
-    @apply flex flex-row mt-6;
+    @apply mt-6 flex flex-row;
 }
 
-@media (max-width: 920px) and (min-width: 768px) {
+@media (max-width: 900px) {
     .landingTagline {
         @apply text-4xl;
     }
 }
 
-@media (max-width: 768px) {
-    .landing {
-        @apply w-screen max-w-none;
-    }
+@media (max-width: 670px) {
 
     .landingAvatar {
-        @apply max-h-[30vh] mt-24;
+        @apply mt-24 max-h-[30vh];
     }
 
     .landingText {
         @apply pt-0;
-    }
-
-    .landingTagline {
-        @apply text-4xl;
     }
 
     .landingRoles {
