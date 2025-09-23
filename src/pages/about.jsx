@@ -3,36 +3,12 @@ import styles from "./about.module.css";
 import Link from "../components/link"
 
 function About() {
-    const [isMobile, setIsMobile] = useState(window.innerWidth <= 768);
-
-    useEffect(() => {
-        const handleResize = () => {
-            setIsMobile(window.innerWidth <= 768);
-        };
-
-        window.addEventListener("resize", handleResize);
-
-        return () => {
-            window.removeEventListener("resize", handleResize);
-        };
-    }, []);
     return (
             <div className={styles.body}>
-                {isMobile && (
-                    <img
-                        className={styles.landingImage}
-                        src={require("../static/images/avatar.png")}
-                        alt="home"
-                    />
-                )}
                 <div className={styles.bodyItem}>
                     <div className={styles.aboutme}>
                         <h1 className={styles.headerLight}>
-                            Hello, I'm
-                            <span className={styles.headerBold}> Celine, </span>
-                            a
-                            <span className={styles.headerBold}> Computer Science</span>
-                            <span className={styles.headerOutlined}> graduate </span>
+                            Dreamer Beneath the Moon
                             from the
                             <span className={styles.headerBold}> University of Toronto.</span>
                         </h1>
@@ -71,13 +47,6 @@ function About() {
                         </div>
                     </div>
                 </div>
-                {!isMobile && (
-                    <img
-                        className={styles.landingImage}
-                        src={require("../static/images/avatar.png")}
-                        alt="home"
-                    />
-                )}
             </div>
     )
 }

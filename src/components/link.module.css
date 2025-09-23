@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 .linkContainer {
-    @apply flex flex-col justify-between items-center w-16 h-16 rounded-lg mr-4 border-2 border-gold transition-all duration-700;
+    @apply flex flex-col justify-between items-center w-16 h-16 mr-4 rounded-lg border-2 border-gold transition-all duration-700;
 }
 
     .linkContainer:hover {

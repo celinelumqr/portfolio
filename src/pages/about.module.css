@@ -4,6 +4,7 @@
 
 .body {
     @apply flex justify-center items-center h-screen;
+    background: url("../static/images/background.png") center/cover no-repeat;
 }
 
 .bodyItem {
