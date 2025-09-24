@@ -16,7 +16,7 @@ function Main() {
                     Worlds Etched In Starlight
                 </h1>
                 <p className={styles.landingRoles}>
-                    Game Developer | Writer | Storyteller
+                    Game Developer | Narrative Designer | Storyteller
                 </p>
                 <div className={styles.links}>
                     <Link

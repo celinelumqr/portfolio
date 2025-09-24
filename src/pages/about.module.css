@@ -7,38 +7,16 @@
     background: url("../static/images/background.png") center/cover no-repeat;
 }
 
-.bodyItem {
+.body {
     @apply flex items-center flex-col p-8;
 }
 
-.aboutme {
-    @apply max-w-[30vw];
-}
-
-.headerLight {
-    @apply text-6xl font-quattroregular font-medium text-[#CDE0EB];
-}
-
-.headerBold {
-    @apply text-6xl font-quattrobold text-[#CDE0EB];
-}
-
-.headerOutlined {
-    @apply text-6xl font-quattrobold text-[#CDE0EB];
-    -webkit-text-fill-color: transparent;
-    -webkit-text-stroke: 2px;
+.header {
+    @apply text-6xl font-quattroregular font-medium text-gold;
 }
 
 .paragraph {
-    @apply text-base font-loraregular font-medium pt-2 text-[#5C6064];
-}
-
-.contacts {
-    @apply flex flex-row mt-6
-}
-
-.landingImage {
-    @apply max-h-screen w-auto;
+    @apply text-base font-loraregular font-medium pt-2 text-textLight;
 }
 
 @media (max-width: 1150px) and (min-width: 1024px) {
