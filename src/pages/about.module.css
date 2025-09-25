@@ -3,12 +3,12 @@
 @tailwind utilities;
 
 .body {
-    @apply flex justify-center items-center h-screen;
+    @apply flex justify-center items-center h-screen w-screen;
     background: url("../static/images/background.png") center/cover no-repeat;
 }
 
-.body {
-    @apply flex items-center flex-col p-8;
+.bodyText {
+    @apply flex items-center flex-col p-8 max-w-3xl w-full;
 }
 
 .header {
@@ -17,6 +17,14 @@
 
 .paragraph {
     @apply text-base font-loraregular font-medium pt-2 text-textLight;
+}
+
+.avatarWrapper {
+    @apply flex justify-center items-center;
+}
+
+.avatar {
+    @apply rounded-full max-w-xs w-full shadow-lg;
 }
 
 @media (max-width: 1150px) and (min-width: 1024px) {
