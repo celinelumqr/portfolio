@@ -3,6 +3,7 @@ import styles from "./about.module.css";
 function About() {
     return (
         <div className={styles.body}>
+            <div className={styles.bodyText}>
             <h1 className={styles.header}>
                 Dreamer Beneath the Moon
             </h1>
@@ -14,7 +15,8 @@ function About() {
             </p>
             <p className={styles.paragraph}>
                 My focus is on narrative design and gameplay mechanics, weaving together story and system so they feel inseparable. To me, the best games don't just tell you a tale, they let you discover it, shape it, and carry it with you.
-            </p>
+                </p>
+            </div>
         </div>
     )
 }
