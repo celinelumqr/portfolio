@@ -34,7 +34,6 @@
 }
 
 @media (max-width: 670px) {
-
     .landingAvatar {
         @apply mt-24 max-h-[30vh];
     }

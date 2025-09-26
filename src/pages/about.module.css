@@ -3,92 +3,58 @@
 @tailwind utilities;
 
 .body {
-    @apply flex justify-center items-center h-screen w-screen;
+    @apply flex flex-col justify-center items-center h-screen w-screen;
+    /*    @apply flex flex-col min-h-screen w-screen px-8 py-6;*/
     background: url("../static/images/background.png") center/cover no-repeat;
 }
 
-.bodyText {
-    @apply flex items-center flex-col p-8 max-w-3xl w-full;
+.mainContainer {
+    @apply w-full max-w-6xl mx-auto;
 }
 
 .header {
-    @apply text-6xl font-quattroregular font-medium text-gold;
+    @apply text-6xl font-quattroregular font-medium text-gold mb-8;
+    text-align: left;
+    white-space: nowrap;
+}
+
+.content {
+    @apply flex flex-col lg:flex-row justify-between items-center lg:items-center gap-8 w-full mb-8;
+}
+
+.bodyText {
+    @apply flex flex-col flex-1;
 }
 
 .paragraph {
     @apply text-base font-loraregular font-medium pt-2 text-textLight;
+    text-align: justify;
+    text-align-last: left;
 }
 
-.avatarWrapper {
-    @apply flex justify-center items-center;
+.aboutImage {
+    @apply flex justify-center items-start;
+    flex-shrink: 0;
 }
 
 .avatar {
-    @apply rounded-full max-w-xs w-full shadow-lg;
+    @apply max-h-[35vh] w-auto;
 }
 
-@media (max-width: 1150px) and (min-width: 1024px) {
-    .aboutme {
-        @apply w-full max-w-none;
-    }
-
-    .landingImage {
-        @apply max-h-[35vh];
-    }
+.skills {
+    @apply grid grid-cols-3 gap-6 text-center justify-center mx-auto;
 }
 
-@media (max-width: 1024px) and (min-width: 768px) {
-    .headerLight, .headerBold, .headerOutlined {
-        @apply text-4xl;
-    }
-
-    .headerOutlined {
-        -webkit-text-stroke: 1.3px;
-    }
-
-    .bodyItem {
-        @apply pt-0;
-    }
-
-    .aboutme {
-        @apply w-full max-w-none;
-    }
-
-    .landingImage {
-        @apply max-h-[30vh];
-    }
+.skillItem {
+    @apply flex flex-col items-center gap-2 text-textLight font-loraregular;
 }
 
-@media (max-width: 768px) {
-    .body {
-        @apply flex-col h-auto;
-    }
+.skillIcon {
+    @apply w-8 h-8 text-gold;
+}
 
-    .bodyItem {
-        @apply pt-0;
-    }
-
-    .aboutme {
-        @apply w-full max-w-none;
-    }
-
-    .headerLight, .headerBold, .headerOutlined {
-        @apply text-4xl;
-    }
-
-    .headerOutlined {
-        -webkit-text-stroke: 1.3px;
-    }
-
-    .paragraph {
-        @apply text-sm;
-    }
-
-    .contacts {
-        @apply justify-center;
-    }
-
-    .landingImage {
-        @apply max-h-[40vh] mt-24;
+@media (max-width: 1024px) {
+    .avatar {
+        @apply mt-24 max-h-[25vh];
     }
 }
