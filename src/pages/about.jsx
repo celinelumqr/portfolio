@@ -1,14 +1,40 @@
 import styles from "./about.module.css";
 import { IoGameController } from "react-icons/io5";
 import { FaCode, FaPenFancy } from "react-icons/fa";
+import { useEffect, useState } from "react";
 
 function About() {
+    const [isMobile, setIsMobile] = useState(window.innerWidth <= 768);
+
+    useEffect(() => {
+        const handleResize = () => {
+            setIsMobile(window.innerWidth <= 768);
+        };
+
+        window.addEventListener("resize", handleResize);
+
+        return () => {
+            window.removeEventListener("resize", handleResize);
+        };
+    }, []);
+
     return (
         <div className={styles.body}>
+
             <div className={styles.mainContainer}>
                 <h1 className={styles.header}>
                     Dreamer Beneath the Moon
                 </h1>
+
+                {isMobile && (
+                    <div className={styles.aboutImage}>
+                        <img
+                            className={styles.avatar}
+                            src={require("../static/images/avatar.png")}
+                            alt="avatar"
+                        />
+                    </div>
+                )}
 
                 <div className={styles.content}>
                     <div className={styles.bodyText}>
@@ -23,13 +49,16 @@ function About() {
                         </p>
                     </div>
 
-                    <div className={styles.aboutImage}>
-                        <img
-                            className={styles.avatar}
-                            src={require("../static/images/avatar.png")}
-                            alt="avatar"
-                        />
-                    </div>
+                    {!isMobile && (
+                        <div className={styles.aboutImage}>
+                            <img
+                                className={styles.avatar}
+                                src={require("../static/images/avatar.png")}
+                                alt="avatar"
+                            />
+                        </div>
+                    )}
+                    
                 </div>
             </div>
 

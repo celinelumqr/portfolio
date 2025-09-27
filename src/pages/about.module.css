@@ -4,12 +4,11 @@
 
 .body {
     @apply flex flex-col justify-center items-center h-screen w-screen;
-    /*    @apply flex flex-col min-h-screen w-screen px-8 py-6;*/
     background: url("../static/images/background.png") center/cover no-repeat;
 }
 
 .mainContainer {
-    @apply w-full max-w-6xl mx-auto;
+    @apply w-full max-w-6xl mx-auto px-8;
 }
 
 .header {
@@ -19,7 +18,7 @@
 }
 
 .content {
-    @apply flex flex-col lg:flex-row justify-between items-center lg:items-center gap-8 w-full mb-8;
+    @apply flex flex-row justify-between items-center gap-8 w-full mb-8;
 }
 
 .bodyText {
@@ -54,7 +53,30 @@
 }
 
 @media (max-width: 1024px) {
+    .header {
+        @apply text-5xl;
+    }
+
     .avatar {
-        @apply mt-24 max-h-[25vh];
+        @apply max-h-[30vh];
+    }
+}
+
+@media (max-width: 768px) {
+    .header {
+        @apply text-4xl;
+        text-align: center;
+    }
+
+    .avatar {
+        @apply max-h-[25vh];
+    }
+
+    .paragraph {
+        @apply text-sm;
+    }
+
+    .skillIcon {
+        @apply w-4 h-4;
     }
 }
