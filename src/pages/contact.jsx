@@ -55,7 +55,7 @@ function Contact() {
     return (
         <div className={styles.linkContainer}>
             <div className={styles.header}>
-                <h1 className={styles.headerLight}>Get in <span className={styles.headerBold}>Touch!</span></h1>
+                <h1 className={styles.headerLight}>Signals in the Cosmic Sea</h1>
             </div>
             <Alert show={confirm || error} success={confirm} message={confirm ? "Email sent successfully!" : "Something unexpected happened..."} />
             {isMobile && (

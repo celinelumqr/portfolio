@@ -2,20 +2,17 @@
 @tailwind components;
 @tailwind utilities;
 
-.projectsContainer {
-    @apply bg-[#CDE0EB] w-[100vw] flex flex-col justify-center items-center py-3;
+.body {
+    @apply w-[100vw] flex flex-col justify-center items-center py-3;
+    background: url("../static/images/background.png") center/cover no-repeat;
 }
 
 .header {
     @apply justify-center flex mb-16 mt-28;
 }
 
-.headerLight {
-    @apply text-6xl font-quattroregular font-medium text-white;
-}
-
-.headerBold {
-    @apply text-6xl font-quattrobold text-white;
+.headerText {
+    @apply text-6xl font-quattroregular font-medium text-gold;
 }
 
 .project {

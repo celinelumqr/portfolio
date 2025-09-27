@@ -28,13 +28,7 @@ function Resume() {
                 <div className={styles.bodyItem}>
                     <div className={styles.aboutme}>
                         <h1 className={styles.headerLight}>
-                            Hello, I'm
-                            <span className={styles.headerBold}> Celine, </span>
-                            a
-                            <span className={styles.headerBold}> Computer Science</span>
-                            <span className={styles.headerOutlined}> graduate </span>
-                            from the
-                            <span className={styles.headerBold}> University of Toronto.</span>
+                        Charted Across the Night Sky
                         </h1>
                         <p className={styles.paragraph}>
                             I am currently on my co-op term working as a full-stack developer at Bell.

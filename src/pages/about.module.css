@@ -18,7 +18,7 @@
 }
 
 .content {
-    @apply flex flex-row justify-between items-center gap-8 w-full mb-8;
+    @apply flex flex-row justify-center items-center gap-8 w-full mb-8;
 }
 
 .bodyText {
@@ -26,9 +26,7 @@
 }
 
 .paragraph {
-    @apply text-base font-loraregular font-medium pt-2 text-textLight;
-    text-align: justify;
-    text-align-last: left;
+    @apply text-base font-loraregular font-medium pt-2 text-textLight text-justify;
 }
 
 .aboutImage {
@@ -76,7 +74,11 @@
         @apply text-sm;
     }
 
+    .skillItem {
+        @apply text-sm;
+    }
+
     .skillIcon {
-        @apply w-4 h-4;
+        @apply w-6 h-6;
     }
 }

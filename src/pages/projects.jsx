@@ -4,9 +4,11 @@ import Project from "../components/project";
 
 function Projects() {
     return (
-        <div className={styles.projectsContainer}>
+        <div className={styles.body}>
             <div className={styles.header}>
-                <h1 className={styles.headerLight}>My <span className={styles.headerBold}>Projects</span></h1>
+                <h1 className={styles.headerText}>
+                    The Forest of a Thousand Stars
+                </h1>
             </div>
             <div className={styles.projects}>
                 <div className={styles.project}>
