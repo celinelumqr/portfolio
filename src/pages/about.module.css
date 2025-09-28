@@ -2,9 +2,8 @@
 @tailwind components;
 @tailwind utilities;
 
-.body {
-    @apply flex flex-col justify-center items-center h-screen w-screen;
-    background: url("../static/images/background.png") center/cover no-repeat;
+.page {
+    @apply w-screen h-screen flex flex-col justify-center items-center bg-[url('../static/images/background.png')] bg-center bg-cover bg-no-repeat;
 }
 
 .mainContainer {
@@ -12,13 +11,11 @@
 }
 
 .header {
-    @apply text-6xl font-quattroregular font-medium text-gold mb-8;
-    text-align: left;
-    white-space: nowrap;
+    @apply text-6xl font-quattroregular font-medium text-gold mb-8 text-left whitespace-nowrap;
 }
 
 .content {
-    @apply flex flex-row justify-center items-center gap-8 w-full mb-8;
+    @apply w-full flex flex-row justify-center items-center gap-8 mb-8;
 }
 
 .bodyText {
@@ -30,12 +27,11 @@
 }
 
 .aboutImage {
-    @apply flex justify-center items-start;
-    flex-shrink: 0;
+    @apply flex justify-center items-start shrink-0;
 }
 
 .avatar {
-    @apply max-h-[35vh] w-auto;
+    @apply w-auto max-h-[35vh];
 }
 
 .skills {
@@ -62,8 +58,7 @@
 
 @media (max-width: 768px) {
     .header {
-        @apply text-4xl;
-        text-align: center;
+        @apply text-4xl text-center;
     }
 
     .avatar {

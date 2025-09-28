@@ -19,7 +19,7 @@ function About() {
     }, []);
 
     return (
-        <div className={styles.body}>
+        <div className={styles.page}>
 
             <div className={styles.mainContainer}>
                 <h1 className={styles.header}>
