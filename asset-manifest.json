@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/moonforest/static/css/main.902311d3.css",
+    "main.css": "/moonforest/static/css/main.4af79acf.css",
     "main.js": "/moonforest/static/js/main.5f025dcc.js",
     "static/js/453.430c425c.chunk.js": "/moonforest/static/js/453.430c425c.chunk.js",
     "static/media/background.png": "/moonforest/static/media/background.9dce836f44130376a0d0.png",
@@ -17,12 +17,12 @@
     "static/media/Lora-Regular.ttf": "/moonforest/static/media/Lora-Regular.363d06393aa47bc62e82.ttf",
     "static/media/Lora-Bold.ttf": "/moonforest/static/media/Lora-Bold.9a0fff275efa282f9516.ttf",
     "index.html": "/moonforest/index.html",
-    "main.902311d3.css.map": "/moonforest/static/css/main.902311d3.css.map",
+    "main.4af79acf.css.map": "/moonforest/static/css/main.4af79acf.css.map",
     "main.5f025dcc.js.map": "/moonforest/static/js/main.5f025dcc.js.map",
     "453.430c425c.chunk.js.map": "/moonforest/static/js/453.430c425c.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.902311d3.css",
+    "static/css/main.4af79acf.css",
     "static/js/main.5f025dcc.js"
   ]
 }
