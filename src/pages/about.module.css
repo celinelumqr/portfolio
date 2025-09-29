@@ -11,7 +11,7 @@
 }
 
 .header {
-    @apply text-6xl font-quattroregular font-medium text-gold mb-8 text-left whitespace-nowrap;
+    @apply text-6xl font-quattroregular font-medium text-gold mb-8 text-center whitespace-nowrap;
 }
 
 .content {
@@ -39,7 +39,7 @@
 }
 
 .skillItem {
-    @apply flex flex-col items-center gap-2 text-textLight font-loraregular;
+    @apply flex flex-col items-center gap-2 font-loraregular text-textLight;
 }
 
 .skillIcon {

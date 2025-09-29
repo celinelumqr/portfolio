@@ -4,7 +4,7 @@ import Project from "../components/project";
 
 function Projects() {
     return (
-        <div className={styles.body}>
+        <div className={styles.projectsBody}>
             <div className={styles.header}>
                 <h1 className={styles.headerText}>
                     The Forest of a Thousand Stars

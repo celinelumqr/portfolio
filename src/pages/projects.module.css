@@ -2,9 +2,8 @@
 @tailwind components;
 @tailwind utilities;
 
-.body {
-    @apply w-[100vw] flex flex-col justify-center items-center py-3;
-    background: url("../static/images/background.png") center/cover no-repeat;
+.projectsBody {
+    @apply w-screen flex flex-col justify-center items-center py-3 bg-[url('../static/images/background.png')] bg-center bg-cover;
 }
 
 .header {
