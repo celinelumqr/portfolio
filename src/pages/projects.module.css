@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 .projectsBody {
-    @apply w-screen flex flex-col justify-center items-center py-3 bg-[url('../static/images/background.png')] bg-center bg-cover;
+    @apply w-screen flex flex-col justify-center items-center py-3 bg-[url('../static/images/background.png')] bg-center bg-repeat-y;
 }
 
 .header {
@@ -12,6 +12,14 @@
 
 .headerText {
     @apply text-6xl font-quattroregular font-medium text-gold;
+}
+
+.filter {
+    @apply mb-6 flex gap-4;
+}
+
+.filterButton {
+    @a0pply px-4 py-2 rounded-lg bg-dark hover:bg-gold hover:text-dark;
 }
 
 .project {

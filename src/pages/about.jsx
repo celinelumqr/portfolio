@@ -20,8 +20,7 @@ function About() {
 
     return (
         <div className={styles.page}>
-
-            <div className={styles.mainContainer}>
+            <div className={styles.aboutBody}>
                 <h1 className={styles.header}>
                     Dreamer Beneath the Moon
                 </h1>

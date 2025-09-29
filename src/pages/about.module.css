@@ -6,7 +6,7 @@
     @apply w-screen h-screen flex flex-col justify-center items-center bg-[url('../static/images/background.png')] bg-center bg-cover bg-no-repeat;
 }
 
-.mainContainer {
+.aboutBody {
     @apply w-full max-w-6xl mx-auto px-8;
 }
 

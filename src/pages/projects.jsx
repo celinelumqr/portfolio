@@ -10,6 +10,11 @@ function Projects() {
                     The Forest of a Thousand Stars
                 </h1>
             </div>
+            <div className={styles.filters}>
+                <button className="px-4 py-2 rounded-lg bg-dark hover:bg-gold hover:text-dark">
+                    All
+                </button>
+            </div>
             <div className={styles.projects}>
                 <div className={styles.project}>
                     <Project
