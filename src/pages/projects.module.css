@@ -14,28 +14,36 @@
     @apply text-6xl font-quattroregular font-medium text-gold;
 }
 
-.filter {
+.filters {
     @apply mb-6 flex gap-4;
 }
 
 .filterButton {
-    @a0pply px-4 py-2 rounded-lg bg-dark hover:bg-gold hover:text-dark;
+    @apply px-4 py-2 rounded-lg bg-dark;
 }
 
-.project {
-    @apply flex h-auto items-start;
+    .filterButton:hover {
+        @apply bg-gold text-dark;
+    }
+
+.projectGrid {
+    @apply grid grid-cols-3 gap-6;
 }
 
 .projects {
 }
 
-@media (max-width: 1024px) and (min-width: 768px) {
+@media (max-width: 1024px) {
     .headerLight, .headerBold {
         @apply text-4xl;
     }
 
     .header {
         @apply mb-8 mt-16;
+    }
+
+    .projectGrid {
+        @apply grid-cols-2;
     }
 }
 
@@ -50,5 +58,9 @@
 
     .header {
         @apply mb-8 mt-16;
+    }
+
+    .projectGrid {
+        @apply grid-cols-1;
     }
 }
