@@ -2,6 +2,18 @@
 @tailwind components;
 @tailwind utilities;
 
+.projectCard {
+    @apply bg-navy p-4 rounded-xl shadow-md cursor-pointer transition;
+}
+
+.projectCard:hover {
+    @apply shadow-lg bg-midnight;
+}
+
+.projectImage {
+    @apply rounded-md mb-3;
+}
+
 .projectContainer {
     @apply flex p-12 max-w-[1300px] w-full;
 }

@@ -29,8 +29,8 @@ function Projects() {
                     title="Butter Royale"
                     tagline="A narrative-driven puzzle game"
                     tags={["Unity", "Narrative Design", "PC"]}
-                    image={require("../static/images/avatar.png")}
-                    showPython={true}
+                    thumbnail="/images/butter-royale.png"
+                    details="Full description of the project goes here..."
                 />
             </div>
         </div>

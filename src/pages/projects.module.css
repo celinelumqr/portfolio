@@ -19,11 +19,11 @@
 }
 
 .filterButton {
-    @apply px-4 py-2 rounded-lg bg-dark;
+    @apply px-4 py-2 rounded-lg bg-midnight;
 }
 
     .filterButton:hover {
-        @apply bg-gold text-dark;
+        @apply bg-gold text-navy;
     }
 
 .projectGrid {
