@@ -55,23 +55,7 @@
 }
 
 
-.projectContainer {
-    @apply flex p-12 max-w-[1300px] w-full;
-}
-
-.projectImage {
-    @apply rounded-xl w-[630px] flex justify-center;
-    overflow: hidden;
-}
-
-.image {
-    @apply object-cover rounded-xl flex justify-center items-center;
-    position: static;
-}
-
 .image:hover {
-    transform: scale(1.1);
-    transition: all 0.8s;
 }
 
 .projectDetailsLeft {
