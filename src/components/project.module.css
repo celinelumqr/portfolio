@@ -55,31 +55,8 @@
 }
 
 
-.image:hover {
-}
-
-.projectDetailsLeft {
-    @apply flex flex-col justify-center w-[670px] ml-12;
-}
-
-.projectDetailsRight {
-    @apply flex flex-col justify-center w-[650px] mr-12;
-}
-
-.number {
-    @apply text-[50px] font-quattroregular text-[#fff];
-}
-
-.title {
-    @apply text-[26px] font-quattroregular text-[#fff];
-}
-
-.description {
-    @apply text-sm font-loraregular mt-1 text-[#5C6064];
-}
 
 .framework {
-    @apply flex flex-wrap text-xs font-quattroregular my-1;
 }
 
 .frameworkItemBlue {
