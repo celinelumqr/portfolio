@@ -56,84 +56,12 @@
 
 
 
-.framework {
-}
 
-.frameworkItemBlue {
-    @apply mr-1 bg-sky-400 text-white rounded-xl px-1 py-0.5 my-1;
-}
 
-.frameworkItemLime {
-    @apply mr-1 bg-lime-400 text-white rounded-xl px-1 py-0.5 my-1;
-}
-
-.frameworkItemGreen {
-    @apply mr-1 bg-green-400 text-white rounded-xl px-1 py-0.5 my-1;
-}
-
-.frameworkItemPurple {
-    @apply mr-1 bg-purple-400 text-white rounded-xl px-1 py-0.5 my-1;
-}
-
-.frameworkItemRose {
-    @apply mr-1 bg-rose-400 text-white rounded-xl px-1 py-0.5 my-1;
-}
-
-.frameworkItemIndigo {
-    @apply mr-1 bg-indigo-400 text-white rounded-xl px-1 py-0.5 my-1;
-}
-
-.frameworkItemViolet {
-    @apply mr-1 bg-violet-400 text-white rounded-xl px-1 py-0.5 my-1;
-}
-
-.frameworkItemOrange {
-    @apply mr-1 bg-orange-400 text-white rounded-xl px-1 py-0.5 my-1;
-}
-
-.frameworkItemAmber {
-    @apply mr-1 bg-amber-400 text-white rounded-xl px-1 py-0.5 my-1;
-}
-
-.continuous {
-    @apply mt-2 mr-2 text-[#5C6064];
-    background: linear-gradient(90deg, currentColor calc(100%/3), transparent 0 calc(200%/3), currentColor 0) var(--d, 0%) 100% /300% 2px no-repeat;
-    transition: 0.5s;
-}
-
-.continuous:hover {
-    --d: 100%;
-}
-
-.links {
-    @apply text-sm font-loraregular mt-1 flex font-bold;
-}
-
-.link {
-    @apply mr-2;
-}
-
-@media (max-width: 1150px) and (min-width: 1024px) {
-    .projectImage {
-        @apply w-full;
-    }
-
-    .projectDetailsLeft, .projectDetailsRight {
-        @apply w-full;
-    }
-}
 
 @media (max-width: 1024px) and (min-width: 768px) {
-    .projectImage {
-        @apply w-full;
-    }
-
-    .projectDetailsLeft, .projectDetailsRight {
-        @apply w-full;
-    }
 
     .number {
-        @apply text-[32px] mt-4;
     }
 }
 
