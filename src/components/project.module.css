@@ -59,12 +59,6 @@
 
 
 
-@media (max-width: 1024px) and (min-width: 768px) {
-
-    .number {
-    }
-}
-
 @media (max-width: 768px) {
     .projectContainer {
         @apply flex-col p-6;
