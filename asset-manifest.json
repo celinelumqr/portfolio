@@ -1,11 +1,12 @@
 {
   "files": {
     "main.css": "/moonforest/static/css/main.17383d20.css",
-    "main.js": "/moonforest/static/js/main.a16deb90.js",
+    "main.js": "/moonforest/static/js/main.ba7ed594.js",
     "static/js/453.430c425c.chunk.js": "/moonforest/static/js/453.430c425c.chunk.js",
     "static/media/background.png": "/moonforest/static/media/background.9dce836f44130376a0d0.png",
     "static/media/avatar.png": "/moonforest/static/media/avatar.467d94635180b15a6c0e.png",
     "static/media/moonforest-logo.png": "/moonforest/static/media/moonforest-logo.ed5c1001f0de30d69f1c.png",
+    "static/media/disney-melee-mania.jpg": "/moonforest/static/media/disney-melee-mania.642c07973076108ed3cd.jpg",
     "static/media/Quattrocento-Bold.ttf": "/moonforest/static/media/Quattrocento-Bold.ed26827e1ecdb8a9bf3e.ttf",
     "static/media/Quattrocento-Regular.ttf": "/moonforest/static/media/Quattrocento-Regular.3d1b0443d0ee295dc542.ttf",
     "static/media/Lora-SemiBoldItalic.ttf": "/moonforest/static/media/Lora-SemiBoldItalic.7830121392b0e74c9481.ttf",
@@ -19,11 +20,11 @@
     "static/media/butter-royale.jpg": "/moonforest/static/media/butter-royale.5ac3496241810965c102.jpg",
     "index.html": "/moonforest/index.html",
     "main.17383d20.css.map": "/moonforest/static/css/main.17383d20.css.map",
-    "main.a16deb90.js.map": "/moonforest/static/js/main.a16deb90.js.map",
+    "main.ba7ed594.js.map": "/moonforest/static/js/main.ba7ed594.js.map",
     "453.430c425c.chunk.js.map": "/moonforest/static/js/453.430c425c.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.17383d20.css",
-    "static/js/main.a16deb90.js"
+    "static/js/main.ba7ed594.js"
   ]
 }
