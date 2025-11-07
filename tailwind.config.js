@@ -13,6 +13,8 @@ module.exports = {
               textMuted: "#B0B0B0",
               glowBlue: "#4A90E2",
               lavender: "#A49CFF",
+              green: "#6FFF90",
+              red: "#FF6F6F",
           },
           fontFamily: {
               lorabold: ['LoraBold', 'serif'],
@@ -25,6 +27,19 @@ module.exports = {
               lorasemibolditalic: ['LoraSemiBoldItalic', 'serif'],
               quattrobold: ['QuattroBold', 'serif'],
               quattroregular: ['QuattroRegular', 'serif'],
+          },
+          backgroundImage: {
+              'portfolio': "url('../static/images/background.png')",
+          },
+          keyframes: {
+              fadeInOut: {
+                  '0%': { opacity: '0', transform: 'translateY(20px)' },
+                  '10%, 90%': { opacity: '1', transform: 'translateY(0)' },
+                  '100%': { opacity: '0', transform: 'translateY(-20px)' },
+              },
+          },
+          animation: {
+              fadeInOut: 'fadeInOut 4s ease-in-out forwards',
           },
       },
   },

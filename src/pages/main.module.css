@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 .landing {
-    @apply flex flex-col items-center justify-center h-screen w-screen bg-center bg-cover bg-no-repeat bg-[url('../static/images/background.png')];;
+    @apply flex flex-col items-center justify-center h-screen w-screen bg-center bg-cover bg-no-repeat bg-portfolio;
 }
 
 .landingAvatar {

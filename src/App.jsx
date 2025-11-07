@@ -4,7 +4,6 @@ import { BrowserRouter as Router } from "react-router-dom";
 import Main from "./pages/main";
 import About from "./pages/about";
 import Projects from "./pages/projects";
-import Resume from "./pages/resume";
 import Contact from "./pages/contact";
 
 function App() {
@@ -23,9 +22,6 @@ function App() {
                     </section>
                     <section id="projects">
                         <Projects />
-                    </section>
-                    <section id="resume">
-                        <Resume />
                     </section>
                     <section id="contact">
                         <Contact />

@@ -3,19 +3,26 @@
 @tailwind utilities;
 
 .alert {
-    @apply fixed inset-x-0 bottom-[36%] flex justify-center items-center z-50;
+    @apply fixed inset-0 z-50 flex justify-center items-center animate-fadeInOut;
+}
+
+.success,
+.failure {
+    @apply flex items-center gap-3 backdrop-blur-md rounded-xl px-6 py-4 border text-textLight shadow-lg;
 }
 
 .success {
-    @apply bg-green-100 border border-green-400 text-green-700 px-4 py-3 rounded relative flex flex-col items-center justify-center shadow-lg;
-    width: auto;
+    @apply border-green bg-green/10 shadow-green/30;
 }
 
 .failure {
-    @apply bg-red-100 border border-red-400 text-red-700 px-4 py-3 rounded relative flex flex-col items-center justify-center shadow-lg;
-    width: auto;
+    @apply border-red bg-red/10 shadow-red/30;
 }
 
 .text {
-    @apply font-bold text-lg text-center font-loraregular;
+    @apply font-loraregular font-medium text-base tracking-wide text-center;
+}
+
+icon {
+    @apply flex-shrink-0 text-2xl;
 }

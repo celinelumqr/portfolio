@@ -1,14 +1,7 @@
 import React from "react";
 import styles from "./alert.module.css";
-
-/**
- * A generic alert component
- * @module AlertComponent
- 
- @prop {boolean} [show] : show alert
- @prop {String} [text] : alert message
- @prop {boolean} [success] : alert success
-**/
+import { RxCross1 } from "react-icons/rx";
+import { BsCheckCircle } from "react-icons/bs";
 
 function Alert(props) {
     if (!props.show) {
@@ -18,10 +11,12 @@ function Alert(props) {
         <div className={styles.alert}>
             {props.success ? (
                 <div className={styles.success}>
+                    <BsCheckCircle className={styles.icon} />
                     <h4 className={styles.text}>{props.message}</h4>
                 </div>
             ) : (
-                <div className={styles.failure}>
+                    <div className={styles.failure}>
+                        <RxCross1 className={styles.icon} />
                     <h4 className={styles.text}>{props.message}</h4>
                 </div>
             )}

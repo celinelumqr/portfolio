@@ -3,64 +3,50 @@
 @tailwind utilities;
 
 .projectsBody {
-    @apply w-screen flex flex-col justify-center items-center py-3 bg-[url('../static/images/background.png')] bg-center bg-repeat-y;
+    @apply flex flex-col items-center justify-center w-screen py-4 bg-portfolio bg-center bg-repeat-y;
 }
 
 .header {
-    @apply justify-center flex mb-16 mt-28;
-}
-
-.headerText {
-    @apply text-6xl font-quattroregular font-medium text-gold;
+    @apply flex justify-center mt-28 mb-8 text-center text-6xl font-quattroregular font-medium text-gold;
 }
 
 .filters {
-    @apply mb-6 flex gap-4;
+    @apply flex gap-4 mb-6;
 }
 
 .filterButton {
-    @apply px-4 py-2 rounded-lg bg-midnight;
+    @apply px-4 py-2 rounded-lg bg-midnight text-gold font-loraregular transition-colors duration-200;
 }
 
-    .filterButton:hover {
+    .filterButton:hover,
+    .activeFilter {
         @apply bg-gold text-navy;
     }
 
-.projectGrid {
-    @apply grid grid-cols-3 gap-6;
-}
-
-.projects {
+.projectsGrid {
+    @apply grid grid-cols-3 gap-6 px-8;
 }
 
 @media (max-width: 1024px) {
-    .headerLight, .headerBold {
-        @apply text-4xl;
-    }
-
     .header {
-        @apply mb-8 mt-16;
+        @apply text-5xl;
     }
 
-    .projectGrid {
+    .projectsGrid {
         @apply grid-cols-2;
     }
 }
 
 @media (max-width: 768px) {
-    .headerLight {
-        @apply text-4xl;
-    }
-
-    .headerBold {
-        @apply text-4xl;
-    }
-
     .header {
-        @apply mb-8 mt-16;
+        @apply text-4xl;
     }
 
-    .projectGrid {
+    .filterButton {
+        @apply text-sm;
+    }
+
+    .projectsGrid {
         @apply grid-cols-1;
     }
 }

@@ -2,121 +2,66 @@
 @tailwind components;
 @tailwind utilities;
 
-.linkContainer {
-    @apply bg-[#CDE0EB] w-[100vw] flex flex-col justify-center items-center py-3;
+.contactPage {
+    @apply flex items-center justify-center w-screen h-screen px-6 py-12 bg-portfolio text-textLight;
+}
+
+.contactBody {
+    @apply max-w-3xl;
 }
 
 .header {
-    @apply justify-center flex mb-16 mt-28;
+    @apply mb-8 text-center text-6xl font-medium font-quattroregular text-gold;
 }
 
-.headerLight {
-    @apply text-6xl font-quattroregular font-medium text-white;
+.text {
+    @apply mb-4 font-loraregular text-textLight;
 }
 
-.headerBold {
-    @apply text-6xl font-quattrobold text-white;
+.form {
+    @apply space-y-4;
 }
 
-.link {
-    @apply flex flex-row justify-center items-center py-3 mb-32;
+.formInput {
+    @apply w-full rounded-md border border-gold/30 bg-transparent p-3 font-loraregular;
 }
 
-.formContainer {
-    @apply flex flex-col py-3 w-full md:w-3/5;
-}
-
-.formEachContainer {
-    @apply md:flex md:items-center mb-6;
-}
-
-.inputContainer {
-    @apply w-full;
-}
-
-.input {
-    @apply font-loraregular appearance-none border-2 border-gray-200 rounded w-full py-2 px-4 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-[#404040]
-}
-
-.buttons {
-    @apply flex flex-row justify-center items-center;
-}
-
-.button {
-    @apply shadow bg-[#5C6064] text-white py-2 px-4 rounded font-loraregular;
-}
-
-.button:hover {
-    @apply bg-[#91969c];
-    transition: all 0.8s;
-}
-
-.links {
-    @apply flex flex-row;
-}
-
-.words {
-    @apply text-[#5C6064] font-loraregular w-[32vw] ml-10 flex flex-col content-start items-start self-start;
-}
-
-.bigLabel {
-    @apply font-bold text-5xl text-[#fff] font-quattroregular;
-}
-
-.bigLabelOutlined {
-    @apply font-bold text-5xl text-[#fff] font-quattrobold;
-    -webkit-text-fill-color: transparent;
-    -webkit-text-stroke: 1.5px;
-}
-
-.label {
-    @apply text-sm font-loraregular mb-1 md:mb-0 mt-4 text-[#5C6064];
-}
-
-@media (max-width: 1024px) and (min-width: 768px) {
-    .headerLight, .headerBold, .headerOutlined {
-        @apply text-4xl;
+    .formInput:focus {
+        @apply border-gold outline-none;
     }
 
-    .headerOutlined {
-        -webkit-text-stroke: 1.3px;
+.button {
+    @apply w-auto rounded-md border border-gold px-6 py-3;
+}
+
+    .button:hover {
+        @apply bg-softGold text-navy transition-all duration-300;
+    }
+
+.links {
+    @apply mt-6 flex flex-row justify-center;
+}
+
+@media (max-width: 1024px) {
+    .header {
+        @apply text-5xl;
+    }
+
+    .button {
+        @apply w-full;
     }
 }
 
 @media (max-width: 768px) {
     .header {
-        @apply mb-8 mt-16;
-    }
-
-    .headerLight, .headerBold {
         @apply text-4xl;
     }
 
-    .input {
-        @apply text-sm; 
+    .text {
+        @apply text-sm;
     }
 
-    .button {
-        @apply text-sm py-2 px-4; 
-    }
-
-    .bigLabel, .bigLabelOutlined {
-        @apply text-3xl;
-    }
-
-    .bigLabelOutlined {
-        -webkit-text-stroke: 1px;
-    }
-
-    .words {
-        @apply w-[85vw] ml-0 flex flex-col content-center items-center self-center;
-    }
-
-    .link {
-        @apply w-[85vw] mb-16;
-    }
-
-    .formContainer {
-        @apply w-full;
+    .formInput {
+        @apply text-sm;
     }
 }

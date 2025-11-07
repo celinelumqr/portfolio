@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 .page {
-    @apply w-screen h-screen flex flex-col justify-center items-center bg-[url('../static/images/background.png')] bg-center bg-cover bg-no-repeat;
+    @apply w-screen h-screen flex flex-col justify-center items-center bg-portfolio bg-center bg-cover bg-no-repeat;
 }
 
 .aboutBody {
@@ -11,7 +11,7 @@
 }
 
 .header {
-    @apply text-6xl font-quattroregular font-medium text-gold mb-8 text-center whitespace-nowrap;
+    @apply text-6xl font-quattroregular font-medium text-gold mb-8 text-center;
 }
 
 .content {
@@ -58,7 +58,7 @@
 
 @media (max-width: 768px) {
     .header {
-        @apply text-4xl text-center;
+        @apply text-4xl;
     }
 
     .avatar {
