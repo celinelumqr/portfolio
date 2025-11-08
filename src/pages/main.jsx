@@ -13,7 +13,7 @@ function Main() {
             />
             <div className={styles.landingText}>
                 <h1 className={styles.landingTagline}>
-                    Worlds Etched In Starlight
+                    Worlds Etched in Starlight
                 </h1>
                 <p className={styles.landingRoles}>
                     Game Developer | Programmer | Storyteller
