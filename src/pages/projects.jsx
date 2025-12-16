@@ -46,7 +46,7 @@ I implemented the puzzle systems in Unity, including switches, conveyors, and ro
             title: "Anamnesis",
             tagline: "The remembering of things from a previous existence.",
             tags: ["Unity", "C++", "C#", "Game Design", "Programming"],
-            //thumbnail: require("../static/images/anamnesis.png"),
+            thumbnail: require("../static/images/anamnesis.png"),
             details: `Anamnesis is a 2D single-player puzzle-platformer where players solve challenges with the help of a ghost from their past life. Upon death, the player respawns at the start of the level alongside a spectral echo that replays their previous actions in real time. To succeed, players must strategically plan and sacrifice each run - holding switches, distracting enemies, or creating paths for their future self.
 
 Originally prototyped in 72 hours using Ubisoft's minimalist C++ API for the Develop at Ubisoft program, the game was later rebuilt in Unity as a full standalone title. This process involved reworking the core mechanics, implementing refined level design, and enhancing visual feedback for clarity and immersion.`,
