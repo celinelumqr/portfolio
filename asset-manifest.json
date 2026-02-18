@@ -1,15 +1,14 @@
 {
   "files": {
     "main.css": "/moonforest/static/css/main.2a93f3fa.css",
-    "main.js": "/moonforest/static/js/main.910bcaa9.js",
+    "main.js": "/moonforest/static/js/main.8896499f.js",
     "static/js/453.430c425c.chunk.js": "/moonforest/static/js/453.430c425c.chunk.js",
     "static/media/scop-sing-us-a-song.png": "/moonforest/static/media/scop-sing-us-a-song.f676f4a6eacc3c4b2e21.png",
     "static/media/background.png": "/moonforest/static/media/background.9dce836f44130376a0d0.png",
     "static/media/anamnesis.png": "/moonforest/static/media/anamnesis.e6216030c098e0ab936a.png",
     "static/media/mirrors-memento.png": "/moonforest/static/media/mirrors-memento.a62f52c6939c21d3187d.png",
-    "static/media/avatar.png": "/moonforest/static/media/avatar.467d94635180b15a6c0e.png",
+    "static/media/avatar.png": "/moonforest/static/media/avatar.610f0408615bbf94ec3f.png",
     "static/media/webster-booster.png": "/moonforest/static/media/webster-booster.feab32eb60fa60617f5a.png",
-    "static/media/moonforest-logo.png": "/moonforest/static/media/moonforest-logo.ed5c1001f0de30d69f1c.png",
     "static/media/disney-melee-mania.jpg": "/moonforest/static/media/disney-melee-mania.642c07973076108ed3cd.jpg",
     "static/media/Quattrocento-Bold.ttf": "/moonforest/static/media/Quattrocento-Bold.ed26827e1ecdb8a9bf3e.ttf",
     "static/media/Quattrocento-Regular.ttf": "/moonforest/static/media/Quattrocento-Regular.3d1b0443d0ee295dc542.ttf",
@@ -23,14 +22,15 @@
     "static/media/Lora-Bold.ttf": "/moonforest/static/media/Lora-Bold.9a0fff275efa282f9516.ttf",
     "static/media/butter-royale.jpg": "/moonforest/static/media/butter-royale.5ac3496241810965c102.jpg",
     "static/media/doughfather.png": "/moonforest/static/media/doughfather.12b794bca67141ee22cb.png",
+    "static/media/moonforest-logo.png": "/moonforest/static/media/moonforest-logo.ab2e7c808b438a13f247.png",
     "static/media/golfers-galaxy.png": "/moonforest/static/media/golfers-galaxy.c6e72442ea0a57ff785f.png",
     "index.html": "/moonforest/index.html",
     "main.2a93f3fa.css.map": "/moonforest/static/css/main.2a93f3fa.css.map",
-    "main.910bcaa9.js.map": "/moonforest/static/js/main.910bcaa9.js.map",
+    "main.8896499f.js.map": "/moonforest/static/js/main.8896499f.js.map",
     "453.430c425c.chunk.js.map": "/moonforest/static/js/453.430c425c.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.2a93f3fa.css",
-    "static/js/main.910bcaa9.js"
+    "static/js/main.8896499f.js"
   ]
 }
