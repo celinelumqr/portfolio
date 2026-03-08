@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/moonforest/static/css/main.e960753f.css",
+    "main.css": "/moonforest/static/css/main.fd7b9188.css",
     "main.js": "/moonforest/static/js/main.88ae81cf.js",
     "static/js/453.430c425c.chunk.js": "/moonforest/static/js/453.430c425c.chunk.js",
     "static/media/background.png": "/moonforest/static/media/background.9dce836f44130376a0d0.png",
@@ -25,12 +25,12 @@
     "static/media/golfers-galaxy.png": "/moonforest/static/media/golfers-galaxy.f25f94c16051dfa0ca8f.png",
     "static/media/moonforest-logo.png": "/moonforest/static/media/moonforest-logo.bbcaa5e1e5c76f4d9420.png",
     "index.html": "/moonforest/index.html",
-    "main.e960753f.css.map": "/moonforest/static/css/main.e960753f.css.map",
+    "main.fd7b9188.css.map": "/moonforest/static/css/main.fd7b9188.css.map",
     "main.88ae81cf.js.map": "/moonforest/static/js/main.88ae81cf.js.map",
     "453.430c425c.chunk.js.map": "/moonforest/static/js/453.430c425c.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.e960753f.css",
+    "static/css/main.fd7b9188.css",
     "static/js/main.88ae81cf.js"
   ]
 }
