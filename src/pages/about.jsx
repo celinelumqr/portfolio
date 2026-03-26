@@ -41,7 +41,7 @@ function About() {
                             I'm a game developer who believes games are more than just entertainment, they're stories we live inside. Whether it's through tight mechanics or immersive narratives, I strive to create experiences that linger with players long after the credits roll.
                         </p>
                         <p className={styles.paragraph}>
-                            I recently graduated from the University of Toronto with a degree in Computer Science, where I combined technical foundations with my passion for storytelling. Along the way, I've explored game design and programming through internships, collaborative group projects, fast-paced game jams, and solo experiments, many of which you'll find showcased here.
+                            My love for narrative design goes back further than games. I've been building characters and worlds in my head since I was young. What drew me to games specifically is what no other medium can replicate: the player is inside the story. Choice, consequence, metanarrative, the intentional removal of control... These are tools unique to games, and I find them endlessly fascinating. It's what draws me to stories that leave a mark on the people who experience them.
                         </p>
                         <p className={styles.paragraph}>
                             My focus is on narrative design and gameplay mechanics, weaving together story and system so they feel inseparable. To me, the best games don't just tell you a tale, they let you discover it, shape it, and carry it with you.

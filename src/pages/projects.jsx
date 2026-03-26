@@ -6,98 +6,31 @@ function Projects() {
     const [filter, setFilter] = useState("All");
 
     const projects = [
+        
         {
-            title: "Butter Royale",
-            tagline: "Have the food fight of your life!",
-            tags: ["Game Design", "Internship", "Apple Arcade"],
-            thumbnail: require("../static/images/butter-royale.jpg"),
-            details: `Butter Royale is a battle royale video game developed by Mighty Bear Games for iOS, iPadOS, macOS, and tvOS. Players engage in a lighthearted food fight across a suburban landscape as a storm of butter gradually draws them closer.
+            title: "Scop, Sing Us a Song",
+            tagline: "The fire waits. The king is gone. Your voice is all that remains.",
+            tags: ["Twine", "HTML", "CSS", "JavaScript", "Narrative Design"],
+            thumbnail: require("../static/images/scop-sing-us-a-song.png"),
+            details: `Set during Beowulf's funeral, Scop, Sing Us a Song explores impermanence through the lens of oral storytelling and memory. You play as a scop (an Old English poet) tasked with recounting stories of the fallen king before the fire burns out. What is remembered, and how it is remembered, shifts with every playthrough.
 
-As part of my game design internship, I conducted playtesting and player support, and designed quality-of-life features that improved player retention. I collaborated closely with the design team for design documentation and iteration.
+Each story choice shapes the tone of the funeral, from glorified legend to quiet lament. Two interlocking systems, "forgotten stories" and "forgotten names", ensure that tales told often grow stronger in memory while others fade, mechanically mirroring the fragility of legacy itself.
 
-Originally released as an Apple Arcade exclusive in January 2020, Butter Royale was retired from the App Store in December 2022.`,
-            links: {}
-        },
-        {
-            title: "Disney Melee Mania",
-            tagline: "Cue the lights! Hear the fans roar!",
-            tags: ["Game Design", "Combat Design", "Internship", "Apple Arcade"],
-            thumbnail: require("../static/images/disney-melee-mania.jpg"),
-            details: `Disney Melee Mania was a 3v3 arena brawler featuring beloved Disney and Pixar characters, each reimagined with distinct, action-ready designs. Every champion had their own set of signature abilities and unlockable cosmetics.
-
-During my time on the project, I designed combat abilities for various Disney heroes and prototyped an early power-up system. My focus was on creating engaging, readable, and well-balanced mechanics that captured each character's essence.
-
-The game was released as an Apple Arcade exclusive on December 17, 2021, and was retired from the platform in December 2024.`,
-            links: {}
+Designed, written, and programmed entirely in Twine with custom HTML, CSS, and JavaScript, this was the culminating project of a Digital Humanities minor, built around the theme of the permanence of impermanence as explored through Beowulf.`,
+            links: {
+                itch: "https://serenecaelum.itch.io/scop-sing-us-a-song"
+            }
         },
         {
             title: "Mirror's Memento",
             tagline: "Who will live and who will die?",
             tags: ["Unity", "C#", "Programming", "Game Design", "Narrative Design", "Puzzle Design"],
             thumbnail: require("../static/images/mirrors-memento.png"),
-            details: `Mirror's Memento is a puzzle game where you guide a young girl trapped in a mysterious dungeon filled with mirrored puzzle rooms. Each chamber contains a doppelganger that mimics your every move, forcing you to use environmental traps and subtle room differences to outwit - and destroy - your doppelganger in order to progress.
+            details: `Mirror's Memento is a puzzle game where you guide a young girl trapped in a mysterious dungeon of mirrored chambers. Each room contains a doppelganger that mimics your every move, forcing you to use environmental traps and subtle room differences to outwit, and destroy, your reflection in order to escape.
 
-I implemented the puzzle systems in Unity, including switches, conveyors, and room rotation mechanics, and developed a BFS-driven hint system to support players through tougher levels. Beyond programming, I designed the narrative structure, wrote flavour text, and scripted cutscenes to weave story and gameplay together seamlessly.`,
+Developed over a full semester as part of a university game development course, the project brought together a cross-disciplinary team of programmers, artists, and musicians. On the technical side, I implemented core puzzle systems in Unity, including switches, conveyors, and room rotation, and developed a BFS-driven hint system to guide players through tougher levels. On the narrative side, I designed the story structure, wrote the in-level flavour text, and scripted the intro and outro cutscenes.`,
             links: {
                 itch: "https://kleinkodes.itch.io/doppelganger"
-            }
-        },
-        {
-            title: "Anamnesis",
-            tagline: "The remembering of things from a previous existence.",
-            tags: ["C++", "C#", "Game Design", "Programming"],
-            thumbnail: require("../static/images/anamnesis.png"),
-            details: `Anamnesis is a 2D single-player puzzle-platformer where players solve challenges with the help of a ghost from their past life. Upon death, the player respawns at the start of the level alongside a spectral echo that replays their previous actions in real time. To succeed, players must strategically plan and sacrifice each run - holding switches, distracting enemies, or creating paths for their future self.
-
-Prototyped in 72 hours using Ubisoft's minimalist C++ API for the Develop at Ubisoft program.`,
-            links: {
-            }
-        },
-//         {
-//             title: "Anamnesis",
-//             tagline: "The remembering of things from a previous existence.",
-//             tags: ["Unity", "C++", "C#", "Game Design", "Programming"],
-//             thumbnail: require("../static/images/anamnesis.png"),
-//             details: `Anamnesis is a 2D single-player puzzle-platformer where players solve challenges with the help of a ghost from their past life. Upon death, the player respawns at the start of the level alongside a spectral echo that replays their previous actions in real time. To succeed, players must strategically plan and sacrifice each run - holding switches, distracting enemies, or creating paths for their future self.
-
-// Originally prototyped in 72 hours using Ubisoft's minimalist C++ API for the Develop at Ubisoft program, the game was later rebuilt in Unity as a full standalone title. This process involved reworking the core mechanics, implementing refined level design, and enhancing visual feedback for clarity and immersion.`,
-//             links: {
-//                 itch: "https://serenecaelum.itch.io/anamnesis"
-//             }
-//         },
-        {
-            title: "Golfers of the Galaxy",
-            tagline: "All golfers start somewhere.",
-            tags: ["C++", "C#", "Game Design", "Programming"],
-            thumbnail: require("../static/images/golfers-galaxy.png"),
-            details: `Golfers of the Galaxy is a 2D physics-based minigolf game where players launch a golf ball across a system of rotating planets, each with its own gravitational pull. Players click and drag to aim and shoot, carefully planning their trajectory to account for planetary orbits, rotations, and gravity wells that constantly shift the ball's path.
-
-Developed in 96 hours using Ubisoft's minimalist C++ API for the Ubisoft NEXT competition.`,
-            links: {
-            }
-        },
-//         {
-//             title: "Golfers of the Galaxy",
-//             tagline: "All golfers start somewhere.",
-//             tags: ["Unity", "C++", "C#", "Game Design", "Programming"],
-//             thumbnail: require("../static/images/golfers-galaxy.png"),
-//             details: `Golfers of the Galaxy is a 2D physics-based minigolf game where players launch a golf ball across a system of rotating planets, each with its own gravitational pull. Players click and drag to aim and shoot, carefully planning their trajectory to account for planetary orbits, rotations, and gravity wells that constantly shift the ball's path.
-
-// Developed initially in 96 hours using Ubisoft's minimalist C++ API for the Ubisoft NEXT competition, the game was later rebuilt in Unity as a complete standalone experience. This rebuild allowed for more refined physics systems, level design, and visual polish, capturing both the whimsy and challenge of navigating an interstellar course.`,
-//             links: {
-//                 itch: "https://serenecaelum.itch.io/golfers-of-the-galaxy"
-//             }
-//         },
-        {
-            title: "Webster Booster",
-            tagline: "Just a spider with a jetpack.",
-            tags: ["Unity", "C#", "Game Jam", "Programming", "VFX"],
-            thumbnail: require("../static/images/webster-booster.png"),
-            details: `Webster Booster is a fast-paced arcade action game where you control a jet-propelled spider chasing bugs across a vibrant arena. Use directional arrows to hunt down the elusive green bug, all while dodging red bugs and racing against the clock. Loop around yellow bugs to gain speed boosts and keep the chase alive!
-
-Developed in Unity within 96 hours for the GMTK Game Jam 2025, this project focused on quick iteration and creative polish. I implemented the visual effects, fuel system, and interactive menu that gave the game its dynamic feel and energetic pacing.`,
-            links: {
-                itch: "https://noorilu.itch.io/webster-booster"
             }
         },
         {
@@ -105,27 +38,67 @@ Developed in Unity within 96 hours for the GMTK Game Jam 2025, this project focu
             tagline: "The house always crumbs out on top.",
             tags: ["Godot", "GDScript", "Narrative Design", "Game Jam"],
             thumbnail: require("../static/images/doughfather.png"),
-            details: `The Doughfather is a quirky cookie-themed pachinko game where you must pay off your debts to the infamous "Doughfather". Drop your cookies, take risks, and pray for good bounces as you work to clear what you owe - one cookie at a time.
+            details: `The Doughfather is a quirky pachinko game where you must pay off your debts to the infamous "Doughfather." Drop your cookies, take risks, and pray for good bounces as you work to clear what you owe, one cookie at a time.
 
-Created in 7 days for the Brackeys Game Jam 2025.2, I led the narrative design and integrated art and juice systems in Godot, bringing the game's sugary underbelly to life with personality and polish.`,
+Created in 7 days for the Brackeys Game Jam 2025.2 with a small team, built around the theme "Risk it for the Biscuit." I conceived the cookie mafia theme and wrote the flavour text that gave the game its personality, from the opening hook to randomised one-liners on the pause menu. I also handled art integration and juice systems in Godot, bringing the game's sugary underbelly to life.`,
             links: {
                 itch: "https://jiputer.itch.io/the-doughfather"
             }
         },
         {
-            title: "Scop, Sing Us a Song",
-            tagline: "The fire waits. The king is gone. Your voice is all that remains.",
-            tags: ["Twine", "HTML", "CSS", "JavaScript", "Narrative Design"],
-            thumbnail: require("../static/images/scop-sing-us-a-song.png"),
-            details: `Set during Beowulf's funeral, Scop, Sing Us a Song explores the theme of impermanence through the lens of oral storytelling and memory. You play as a scop (an Old English poet) tasked with recounting stories of the fallen king before the fire burns out. What is remembered, and how, shifts with every playthrough. Each story choice shapes the tone of the funeral, from glorified legend to quiet lament. Mechanically, "forgotten stories" and "forgotten names" systems ensure that tales told often grow stronger in memory, while others fade - mirroring the fragility of legacy itself.
+            title: "Anamnesis",
+            tagline: "The remembering of things from a previous existence.",
+            tags: ["C++", "C#", "Game Design", "Programming"],
+            thumbnail: require("../static/images/anamnesis.png"),
+            details: `Anamnesis is a 2D puzzle-platformer where players solve challenges with the help of a ghost from their past life. Upon death, the player respawns alongside a spectral echo that replays their previous run in real time, forcing players to strategically plan and sacrifice each attempt to hold switches, distract enemies, and create paths for their future self.
 
-I designed, wrote, and programmed the entire experience in Twine, using custom HTML, CSS, and JavaScript to reinforce its themes of repetition, choice, and decay.`,
+A solo prototype built in 72 hours using Ubisoft's minimalist C++ API as part of the Develop at Ubisoft program.`,
             links: {
-                itch: "https://serenecaelum.itch.io/scop-sing-us-a-song"
             }
+        },
+        {
+            title: "Golfers of the Galaxy",
+            tagline: "All golfers start somewhere.",
+            tags: ["C++", "C#", "Game Design", "Programming"],
+            thumbnail: require("../static/images/golfers-galaxy.png"),
+            details: `Golfers of the Galaxy is a 2D physics-based minigolf game where players launch a golf ball across a system of rotating planets, each with its own gravitational pull. Players click and drag to aim and shoot, carefully planning their trajectory around planetary orbits, rotations, and shifting gravity wells.
+
+A solo prototype built in 96 hours using Ubisoft's minimalist C++ API for the Ubisoft NEXT competition.`,
+            links: {
+            }
+        },
+        {
+            title: "Webster Booster",
+            tagline: "Just a spider with a jetpack.",
+            tags: ["Unity", "C#", "Game Jam", "Programming", "VFX"],
+            thumbnail: require("../static/images/webster-booster.png"),
+            details: `Webster Booster is a fast-paced arcade game where you control a jet-propelled spider chasing bugs across a vibrant arena. Hunt down the elusive green bug, dodge red bugs, and loop around yellow ones to gain speed boosts, a mechanic designed directly around the jam's theme of "Loop."
+
+Developed in 96 hours for the GMTK Game Jam 2025 as part of a small multidisciplinary team. I was responsible for implementing the visual effects, including particle systems for kills, jetpack boosts, and loop completions, as well as the fuel system and interactive menu.`,
+            links: {
+                itch: "https://noorilu.itch.io/webster-booster"
+            }
+        },
+        {
+            title: "Butter Royale",
+            tagline: "Have the food fight of your life!",
+            tags: ["Game Design", "Internship", "Apple Arcade"],
+            thumbnail: require("../static/images/butter-royale.jpg"),
+            details: `Butter Royale is a lighthearted battle royale developed by Mighty Bear Games, released exclusively on Apple Arcade in January 2020.
+
+As a game design intern, I contributed to the design and documentation of quality-of-life features including a replay system and daily login rewards. I also conducted playtesting sessions and handled player support, collaborating closely with the design team throughout the iteration process.`,
+            links: {}
+        },
+        {
+            title: "Disney Melee Mania",
+            tagline: "Cue the lights! Hear the fans roar!",
+            tags: ["Game Design", "Internship", "Apple Arcade"],
+            thumbnail: require("../static/images/disney-melee-mania.jpg"),
+            details: `Disney Melee Mania was a 3v3 arena brawler featuring beloved Disney and Pixar characters, each reimagined with distinct, action-ready designs and signature abilities.
+
+As a game design intern, I supported combat design by researching source material across Disney and Pixar properties to identify canonically accurate ability inspirations, a key requirement given Disney's strict licensing standards. I compiled visual references including animation screenshots to guide the design and art teams, and contributed to the early prototyping of a power-up system.`,
+            links: {}
         }
-
-
     ];
 
     const filteredProjects = projects.filter(
@@ -139,7 +112,7 @@ I designed, wrote, and programmed the entire experience in Twine, using custom H
             </h1>
 
             <div className={styles.filters}>
-                {["All", "Game Design", "Programming", "Narrative Design"].map((category) => (
+                {["All", "Game Design", "Narrative Design", "Programming"].map((category) => (
                     <button
                         key={category}
                         className={`${styles.filterButton} ${filter === category ? styles.activeFilter : ""
