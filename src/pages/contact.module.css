@@ -15,7 +15,7 @@
 }
 
 .text {
-    @apply mb-4 font-loraregular text-textLight;
+    @apply mb-4 font-loraregular text-textLight bg-black bg-opacity-25 p-0 rounded-2xl;
 }
 
 .form {
@@ -31,7 +31,7 @@
     }
 
 .button {
-    @apply w-auto rounded-md border border-gold px-6 py-3;
+    @apply w-auto rounded-md border border-gold px-6 py-3 font-loraregular;
 }
 
     .button:hover {
@@ -63,5 +63,9 @@
 
     .formInput {
         @apply text-sm;
+    }
+
+    .contactPage {
+        @apply px-12;
     }
 }

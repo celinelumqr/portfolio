@@ -60,21 +60,6 @@ function About() {
                     
                 </div>
             </div>
-
-            <div className={styles.skills}>
-                <div className={styles.skillItem}>
-                    <IoGameController className={styles.skillIcon} />
-                    <span>Game Design</span>
-                </div>
-                <div className={styles.skillItem}>
-                    <FaCode className={styles.skillIcon} />
-                    <span>Programming</span>
-                </div>
-                <div className={styles.skillItem}>
-                    <FaPenFancy className={styles.skillIcon} />
-                    <span>Narrative Design</span>
-                </div>
-            </div>
         </div>
     )
 }

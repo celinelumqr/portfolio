@@ -7,23 +7,15 @@
 }
 
 .navbarLeft {
-    @apply flex items-center text-4xl text-gold;
+    @apply flex items-center text-4xl text-gold pl-8;
 }
 
 .navbarLogo {
     @apply h-14;
 }
 
-.navbarBrand {
-    @apply flex items-center leading-none transition-colors duration-300;
-}
-
-    .navbarBrand:hover {
-        @apply text-softGold;
-    }
-
 .navbarRight {
-    @apply flex flex-row items-center justify-around text-left;
+    @apply flex flex-row items-center justify-around text-left ml-auto;
 }
 
 .navbarLink {

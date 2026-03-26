@@ -7,7 +7,7 @@
 }
 
 .landingAvatar {
-    @apply w-auto max-h-[35vh];
+    @apply w-auto max-h-[30vh];
 }
 
 .landingText {
@@ -19,14 +19,30 @@
 }
 
 .landingRoles {
-    @apply pt-2 text-base font-loraregular font-medium text-textLight;
+    @apply py-6 text-3xl font-loraregular font-medium text-textLight;
 }
 
 .links {
     @apply mt-6 flex flex-row;
 }
 
+.skills {
+    @apply grid grid-cols-3 gap-6 text-center justify-center mx-auto;
+}
+
+.skillItem {
+    @apply flex flex-col items-center gap-2 font-loraregular text-textLight;
+}
+
+.skillIcon {
+    @apply w-8 h-8 text-gold;
+}
+
 @media (max-width: 900px) {
+    .landingAvatar {
+        @apply mt-24 max-h-[25vh];
+    }
+
     .landingTagline {
         @apply text-4xl;
     }
@@ -34,11 +50,11 @@
 
 @media (max-width: 670px) {
     .landingAvatar {
-        @apply mt-24 max-h-[30vh];
+        @apply mt-24 max-h-[20vh];
     }
 
     .landingText {
-        @apply pt-0;
+        @apply py-0;
     }
 
     .landingRoles {
@@ -47,5 +63,13 @@
 
     .links {
         @apply justify-center;
+    }
+
+    .skillItem {
+        @apply text-sm;
+    }
+
+    .skillIcon {
+        @apply w-6 h-6;
     }
 }
