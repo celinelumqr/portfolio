@@ -18,19 +18,19 @@ Each story choice shapes the tone of the funeral, from glorified legend to quiet
 
 Designed, written, and programmed entirely in Twine with custom HTML, CSS, and JavaScript, this was the culminating project of a Digital Humanities minor, built around the theme of the permanence of impermanence as explored through Beowulf.`,
             links: {
-                itch: "https://serenecaelum.itch.io/scop-sing-us-a-song"
+                itch: "https://moon-forest.itch.io/scop-sing-us-a-song"
             }
         },
         {
             title: "Iris",
             tagline: "Who's really in control?",
             tags: ["Twine", "HTML", "CSS", "JavaScript", "Narrative Design"],
-            // thumbnail: require("../static/images/iris.png"),
+            thumbnail: require("../static/images/iris.png"),
             details: `Iris is a short interactive narrative where players assume the role of a young girl trying to escape a mysterious facility... or so they think. The game initially presents itself as a straightforward escape story, but subtle visual glitches and contradictions slowly reveal that the player is not who they think they are.
 
 Three branching endings emerge from the player's choices, each reframing the question of agency and complicity differently. Custom styling, including colour-coded text, timed effects, and sound design, reinforces the disorientation as the truth becomes apparent.`,
             links: {
-                itch: "https://serenecaelum.itch.io/iris"
+                itch: "https://moon-forest.itch.io/iris"
             }
         },
         {
