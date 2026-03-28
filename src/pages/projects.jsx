@@ -22,6 +22,18 @@ Designed, written, and programmed entirely in Twine with custom HTML, CSS, and J
             }
         },
         {
+            title: "Iris",
+            tagline: "Who's really in control?",
+            tags: ["Twine", "HTML", "CSS", "JavaScript", "Narrative Design"],
+            // thumbnail: require("../static/images/iris.png"),
+            details: `Iris is a short interactive narrative where players assume the role of a young girl trying to escape a mysterious facility... or so they think. The game initially presents itself as a straightforward escape story, but subtle visual glitches and contradictions slowly reveal that the player is not who they think they are.
+
+Three branching endings emerge from the player's choices, each reframing the question of agency and complicity differently. Custom styling, including colour-coded text, timed effects, and sound design, reinforces the disorientation as the truth becomes apparent.`,
+            links: {
+                itch: "https://serenecaelum.itch.io/iris"
+            }
+        },
+        {
             title: "Mirror's Memento",
             tagline: "Who will live and who will die?",
             tags: ["Unity", "C#", "Programming", "Game Design", "Narrative Design", "Puzzle Design"],
