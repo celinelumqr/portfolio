@@ -1,19 +1,19 @@
 {
-  "short_name": "moonforest",
+  "short_name": "Celine Lum",
   "name": "Celine Lum's Portfolio'",
   "icons": [
     {
-        "src": "moonforest-logo.png",
+        "src": "portfolio-logo.png",
         "sizes": "64x64 32x32 24x24 16x16",
         "type": "image/x-icon"
     },
     {
-        "src": "moonforest-logo.png",
+        "src": "portfolio-logo.png",
         "type": "image/png",
         "sizes": "192x192"
     },
     {
-        "src": "moonforest-logo.png",
+        "src": "portfolio-logo.png",
         "type": "image/png",
         "sizes": "512x512"
     }
