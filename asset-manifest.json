@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.66e985d1.css",
-    "main.js": "/portfolio/static/js/main.d1475170.js",
+    "main.css": "/portfolio/static/css/main.f2aba809.css",
+    "main.js": "/portfolio/static/js/main.00cbc10c.js",
     "static/media/mirrors-memento.png": "/portfolio/static/media/mirrors-memento.a62f52c6939c21d3187d.png",
     "static/media/scop-sing-us-a-song.png": "/portfolio/static/media/scop-sing-us-a-song.6549d6cf7ca03c55043b.png",
     "static/media/anamnesis.png": "/portfolio/static/media/anamnesis.43b6a5b4075efba0a82b.png",
@@ -9,14 +9,15 @@
     "static/media/disney-melee-mania.jpg": "/portfolio/static/media/disney-melee-mania.642c07973076108ed3cd.jpg",
     "static/media/iris.png": "/portfolio/static/media/iris.27a7247151041f187339.png",
     "static/media/butter-royale.jpg": "/portfolio/static/media/butter-royale.5ac3496241810965c102.jpg",
+    "static/media/bite-club.png": "/portfolio/static/media/bite-club.ef52108458e5638021a9.png",
     "static/media/doughfather.png": "/portfolio/static/media/doughfather.12b794bca67141ee22cb.png",
     "static/media/golfers-galaxy.png": "/portfolio/static/media/golfers-galaxy.f25f94c16051dfa0ca8f.png",
     "index.html": "/portfolio/index.html",
-    "main.66e985d1.css.map": "/portfolio/static/css/main.66e985d1.css.map",
-    "main.d1475170.js.map": "/portfolio/static/js/main.d1475170.js.map"
+    "main.f2aba809.css.map": "/portfolio/static/css/main.f2aba809.css.map",
+    "main.00cbc10c.js.map": "/portfolio/static/js/main.00cbc10c.js.map"
   },
   "entrypoints": [
-    "static/css/main.66e985d1.css",
-    "static/js/main.d1475170.js"
+    "static/css/main.f2aba809.css",
+    "static/js/main.00cbc10c.js"
   ]
 }
