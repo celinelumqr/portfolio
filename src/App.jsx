@@ -22,7 +22,7 @@ function App() {
                 <div id="about" className={styles.section}>
                     <About />
                 </div>
-                <div className={styles.section}>
+                <div id="experience" className={styles.section}>
                     <Experience />
                 </div>
                 <div id="projects" className={styles.section}>

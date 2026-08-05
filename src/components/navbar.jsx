@@ -12,6 +12,9 @@ function Navbar() {
                     <a href="#about" className={styles.navbarLink}>
                         About
                     </a>
+                    <a href="#experience" className={styles.navbarLink}>
+                        Experience
+                    </a>
                     <a href="#projects" className={styles.navbarLink}>
                         Work
                     </a>
