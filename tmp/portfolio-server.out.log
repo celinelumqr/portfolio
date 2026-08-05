@@ -1,0 +1,110 @@
+
+> portfolio@0.1.0 start
+> react-scripts start
+
+Starting the development server...
+
+Compiled successfully!
+
+You can now view portfolio in the browser.
+
+  Local:            http://localhost:3000/portfolio
+  On Your Network:  http://172.21.32.1:3000/portfolio
+
+Note that the development build is not optimized.
+To create a production build, use npm run build.
+
+webpack compiled [1m[32msuccessfully[39m[22m
+Compiling...
+Failed to compile.
+
+[eslint] 
+src\App.jsx
+Syntax error: Missing semicolon. (4:37) (4:37)
+[1m[31mERROR[39m[22m in [1m./src/App.jsx[39m[22m
+Module build failed (from ./node_modules/babel-loader/lib/index.js):
+SyntaxError: C:\Users\celin\source\repos\portfolio\src\App.jsx: Missing semicolon. (4:37)
+
+[0m [90m 2 |[39m [36mimport[39m [33mNavbar[39m [36mfrom[39m [32m"./components/navbar"[39m[33m;[39m
+ [90m 3 |[39m [36mimport[39m [33mMain[39m [36mfrom[39m [32m"./pages/main"[39m[33m;[39m
+[31m[1m>[22m[39m[90m 4 |[39m [36mimport[39m [33mAbout[39m [36mfrom[39m [32m"./pages/about"[39m[33m;[39m[32m`r`[39mnimport [33mExperience[39m [36mfrom[39m [32m"./pages/experience"[39m[33m;[39m
+ [90m   |[39m                                      [31m[1m^[22m[39m
+ [90m 5 |[39m [36mimport[39m [33mProjects[39m [36mfrom[39m [32m"./pages/projects"[39m[33m;[39m
+ [90m 6 |[39m [36mimport[39m [33mContact[39m [36mfrom[39m [32m"./pages/contact"[39m[33m;[39m
+ [90m 7 |[39m[0m
+    at constructor (C:\Users\celin\source\repos\portfolio\node_modules\@babel\parser\lib\index.js:369:19)
+    at FlowParserMixin.raise (C:\Users\celin\source\repos\portfolio\node_modules\@babel\parser\lib\index.js:6620:19)
+    at FlowParserMixin.semicolon (C:\Users\celin\source\repos\portfolio\node_modules\@babel\parser\lib\index.js:6916:10)
+    at FlowParserMixin.parseExpressionStatement (C:\Users\celin\source\repos\portfolio\node_modules\@babel\parser\lib\index.js:13314:10)
+    at FlowParserMixin.parseExpressionStatement (C:\Users\celin\source\repos\portfolio\node_modules\@babel\parser\lib\index.js:2956:18)
+    at FlowParserMixin.parseStatementContent (C:\Users\celin\source\repos\portfolio\node_modules\@babel\parser\lib\index.js:12928:19)
+    at FlowParserMixin.parseStatementLike (C:\Users\celin\source\repos\portfolio\node_modules\@babel\parser\lib\index.js:12796:17)
+    at FlowParserMixin.parseStatementLike (C:\Users\celin\source\repos\portfolio\node_modules\@babel\parser\lib\index.js:2934:24)
+    at FlowParserMixin.parseModuleItem (C:\Users\celin\source\repos\portfolio\node_modules\@babel\parser\lib\index.js:12773:17)
+    at FlowParserMixin.parseBlockOrModuleBlockBody (C:\Users\celin\source\repos\portfolio\node_modules\@babel\parser\lib\index.js:13345:36)
+    at FlowParserMixin.parseBlockBody (C:\Users\celin\source\repos\portfolio\node_modules\@babel\parser\lib\index.js:13338:10)
+    at FlowParserMixin.parseProgram (C:\Users\celin\source\repos\portfolio\node_modules\@babel\parser\lib\index.js:12651:10)
+    at FlowParserMixin.parseTopLevel (C:\Users\celin\source\repos\portfolio\node_modules\@babel\parser\lib\index.js:12641:25)
+    at FlowParserMixin.parseTopLevel (C:\Users\celin\source\repos\portfolio\node_modules\@babel\parser\lib\index.js:3701:28)
+    at FlowParserMixin.parse (C:\Users\celin\source\repos\portfolio\node_modules\@babel\parser\lib\index.js:14517:25)
+    at parse (C:\Users\celin\source\repos\portfolio\node_modules\@babel\parser\lib\index.js:14551:38)
+    at parser (C:\Users\celin\source\repos\portfolio\node_modules\@babel\core\lib\parser\index.js:41:34)
+    at parser.next (<anonymous>)
+    at normalizeFile (C:\Users\celin\source\repos\portfolio\node_modules\@babel\core\lib\transformation\normalize-file.js:51:37)
+    at normalizeFile.next (<anonymous>)
+    at run (C:\Users\celin\source\repos\portfolio\node_modules\@babel\core\lib\transformation\index.js:22:50)
+    at run.next (<anonymous>)
+    at transform (C:\Users\celin\source\repos\portfolio\node_modules\@babel\core\lib\transform.js:22:33)
+    at transform.next (<anonymous>)
+    at step (C:\Users\celin\source\repos\portfolio\node_modules\gensync\index.js:261:32)
+    at C:\Users\celin\source\repos\portfolio\node_modules\gensync\index.js:273:13
+    at async.call.result.err.err (C:\Users\celin\source\repos\portfolio\node_modules\gensync\index.js:223:11)
+
+[1m[31mERROR[39m[22m in [1m[eslint] 
+src\App.jsx
+  Line 4:37:  Parsing [1m[31merror[39m[22m[1m: Missing semicolon. (4:37)
+
+[39m[22m
+
+webpack compiled with [1m[31m2 errors[39m[22m
+Compiling...
+Compiled with warnings.
+
+[eslint] 
+src\App.jsx
+  Line 1:1:  Unexpected Unicode BOM (Byte Order Mark)  unicode-bom
+
+src\pages\experience.jsx
+  Line 1:1:  Unexpected Unicode BOM (Byte Order Mark)  unicode-bom
+
+Search for the keywords to learn more about each warning.
+To ignore, add // eslint-disable-next-line to the line before.
+
+[1m[33mWARNING[39m[22m in [1m[eslint] 
+src\App.jsx
+  Line 1:1:  [1m[31mUnexpected[39m[22m[1m Unicode BOM (Byte Order Mark)  unicode-bom
+
+src\pages\experience.jsx
+  Line 1:1:  [1m[31mUnexpected[39m[22m[1m Unicode BOM (Byte Order Mark)  unicode-bom
+
+[39m[22m
+
+webpack compiled with [1m[33m1 warning[39m[22m
+Compiling...
+Compiled successfully!
+webpack compiled [1m[32msuccessfully[39m[22m
+Compiling...
+Compiled successfully!
+webpack compiled [1m[32msuccessfully[39m[22m
+Compiling...
+Compiled successfully!
+webpack compiled [1m[32msuccessfully[39m[22m
+Compiling...
+Compiled successfully!
+webpack compiled [1m[32msuccessfully[39m[22m
+Compiling...
+Compiled successfully!
+webpack compiled [1m[32msuccessfully[39m[22m
+Compiling...
+Compiled successfully!
+webpack compiled [1m[32msuccessfully[39m[22m

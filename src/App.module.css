@@ -1,66 +1,38 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
-
-@font-face {
-    font-family: "LoraBold";
-    src: url("./static/fonts/Lora-Bold.ttf");
-}
-
-@font-face {
-    font-family: "LoraBoldItalic";
-    src: url("./static/fonts/Lora-BoldItalic.ttf");
-}
-
-@font-face {
-    font-family: "LoraItalic";
-    src: url("./static/fonts/Lora-Italic.ttf");
-}
-
-@font-face {
-    font-family: "LoraMedium";
-    src: url("./static/fonts/Lora-Medium.ttf");
-}
-
-@font-face {
-    font-family: "LoraMediumItalic";
-    src: url("./static/fonts/Lora-MediumItalic.ttf");
-}
-
-@font-face {
-    font-family: "LoraRegular";
-    src: url("./static/fonts/Lora-Regular.ttf");
-}
-
-@font-face {
-    font-family: "LoraSemiBold";
-    src: url("./static/fonts/Lora-SemiBold.ttf");
-}
-
-@font-face {
-    font-family: "LoraSemiBoldItalic";
-    src: url("./static/fonts/Lora-SemiBoldItalic.ttf");
-}
-
-@font-face {
-    font-family: "QuattroBold";
-    src: url("./static/fonts/Quattrocento-Bold.ttf");
-}
-
-@font-face {
-    font-family: "QuattroRegular";
-    src: url("./static/fonts/Quattrocento-Regular.ttf");
-}
-
-html {
-    scroll-behavior: smooth;
-}
-
 .appContainer {
-    @apply min-h-screen;
+    --navbar-height: 57px;
+
+    @apply min-h-screen bg-canvas text-foreground;
+}
+
+.skipLink {
+    @apply fixed left-4 top-4 z-[100] -translate-y-20 rounded-md bg-foreground px-4 py-3 font-sans text-sm font-medium text-canvas no-underline transition-transform duration-200;
+}
+
+.skipLink:focus {
+    @apply translate-y-0 outline-none ring-2 ring-accent/40 ring-offset-2 ring-offset-canvas;
 }
 
 .bodyContainer {
-    @apply flex flex-col items-center justify-center;
-    overflow-x: hidden;
+    @apply w-full;
+}
+
+.bodyContainer:focus {
+    @apply outline-none;
+}
+
+.section {
+    @apply w-full;
+    scroll-margin-top: var(--navbar-height);
+}
+
+@media (max-width: 670px) {
+    .appContainer {
+        --navbar-height: 93px;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .skipLink {
+        transition: none;
+    }
 }

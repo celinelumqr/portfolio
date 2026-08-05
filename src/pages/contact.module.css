@@ -1,71 +1,77 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
-
 .contactPage {
-    @apply flex items-center justify-center w-screen h-screen px-6 py-12 bg-portfolio text-textLight;
+    @apply flex min-h-screen w-full items-center bg-canvas px-8 py-24 text-foreground;
 }
 
 .contactBody {
-    @apply max-w-3xl;
+    @apply mx-auto w-full max-w-2xl;
 }
 
 .header {
-    @apply mb-8 text-center text-6xl font-medium font-quattroregular text-gold;
+    @apply mb-4 text-left font-sans text-5xl font-medium text-foreground;
 }
 
 .text {
-    @apply mb-4 font-loraregular text-textLight bg-black bg-opacity-25 p-0 rounded-2xl;
+    @apply mb-10 max-w-xl font-sans text-base leading-7 text-muted;
 }
 
 .form {
-    @apply space-y-4;
+    @apply space-y-5;
+}
+
+.formField {
+    @apply block;
+}
+
+.formLabel {
+    @apply mb-2 block font-sans text-sm font-medium text-foreground;
 }
 
 .formInput {
-    @apply w-full rounded-md border border-gold/30 bg-transparent p-3 font-loraregular;
+    @apply w-full rounded-md border border-divider bg-surface px-4 py-3 font-sans text-foreground transition-colors duration-200;
 }
 
-    .formInput:focus {
-        @apply border-gold outline-none;
-    }
+.formInput:hover {
+    @apply border-muted;
+}
+
+.formInput:focus {
+    @apply border-accent outline-none ring-2 ring-accent/30;
+}
+
+textarea.formInput {
+    @apply min-h-32 resize-y;
+}
 
 .button {
-    @apply w-auto rounded-md border border-gold px-6 py-3 font-loraregular;
+    @apply inline-flex items-center justify-center rounded-md bg-foreground px-6 py-3 font-sans text-sm font-medium text-canvas transition-opacity duration-200;
 }
 
-    .button:hover {
-        @apply bg-softGold text-navy transition-all duration-300;
-    }
+.button:hover:not(:disabled) {
+    @apply opacity-85;
+}
+
+.button:focus-visible {
+    @apply outline-none ring-2 ring-accent/40 ring-offset-2 ring-offset-canvas;
+}
+
+.button:disabled {
+    @apply cursor-not-allowed opacity-50;
+}
 
 .links {
-    @apply mt-6 flex flex-row justify-center;
-}
-
-@media (max-width: 1024px) {
-    .header {
-        @apply text-5xl;
-    }
-
-    .button {
-        @apply w-full;
-    }
+    @apply mt-8 flex gap-3;
 }
 
 @media (max-width: 768px) {
+    .contactPage {
+        @apply px-5 py-16;
+    }
+
     .header {
         @apply text-4xl;
     }
 
-    .text {
-        @apply text-sm;
-    }
-
-    .formInput {
-        @apply text-sm;
-    }
-
-    .contactPage {
-        @apply px-12;
+    .button {
+        @apply w-full;
     }
 }

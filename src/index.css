@@ -2,13 +2,26 @@
 @tailwind components;
 @tailwind utilities;
 
-body {
-    margin: 0;
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
+html {
+    @apply bg-canvas;
+    color-scheme: dark;
+    scroll-behavior: smooth;
 }
 
-code {
-    font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
+body {
+    @apply m-0 min-w-[320px] bg-canvas font-sans text-foreground antialiased;
+}
+
+#root {
+    @apply min-h-screen;
+}
+
+::selection {
+    @apply bg-accent/30 text-foreground;
+}
+
+@media (prefers-reduced-motion: reduce) {
+    html {
+        scroll-behavior: auto;
+    }
 }

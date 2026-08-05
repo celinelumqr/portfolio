@@ -1,78 +1,91 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
-
 .projectCard {
-    @apply p-4 rounded-xl bg-navy shadow-md cursor-pointer transition;
+    @apply overflow-hidden rounded-md border border-divider bg-surface shadow-sm transition-colors duration-200;
 }
 
-    .projectCard:hover {
-        @apply bg-midnight shadow-lg;
-    }
+.projectTrigger {
+    @apply block h-full w-full cursor-pointer p-4 text-left;
+}
+
+.projectCard:hover,
+.projectCard:focus-within {
+    @apply border-accent/40;
+}
+
+.projectTrigger:focus-visible {
+    @apply outline-none ring-2 ring-inset ring-accent/50;
+}
 
 .projectImage {
-    @apply w-full h-[200px] mb-3 rounded-md object-cover;
+    @apply mb-3 h-[200px] w-full rounded-sm object-cover;
 }
 
 .projectTitle {
-    @apply text-xl font-semibold font-quattroregular text-gold;
+    @apply block font-sans text-xl font-medium text-foreground;
 }
 
 .projectTagline {
-    @apply text-sm font-loraregular text-textLight;
+    @apply mt-1 block font-sans text-sm text-muted;
 }
 
 .projectTags {
-    @apply mt-2 mb-4 flex flex-wrap gap-2;
+    @apply mb-4 mt-3 flex flex-wrap gap-2;
 }
 
 .projectTag {
-    @apply px-2 py-1 text-xs rounded-full border border-gold bg-navy text-gold font-loraregular;
+    @apply rounded-sm border border-divider bg-white/5 px-2 py-1 font-sans text-xs text-muted;
 }
 
 .projectOpen {
-    @apply fixed inset-0 z-50 flex justify-center items-center p-4 bg-navy/70 transition-opacity duration-200;
+    @apply fixed inset-0 z-50 flex items-center justify-center bg-canvas/80 p-4 backdrop-blur-sm;
 }
 
 .projectOpenCard {
-    @apply relative w-full max-w-3xl overflow-hidden rounded-2xl border border-gold/20 bg-midnight text-textLight shadow-xl;
+    @apply relative max-h-[90vh] w-full max-w-3xl overflow-y-auto rounded-lg border border-divider bg-surface text-foreground shadow-xl;
 }
 
 .projectClose {
-    @apply absolute top-4 right-4 text-xl text-gold;
+    @apply absolute right-4 top-4 z-10 flex h-10 w-10 items-center justify-center rounded-md border border-divider bg-surface/90 text-xl text-muted transition-colors duration-200;
 }
 
-    .projectClose:hover {
-        @apply text-softGold transition;
-    }
+.projectClose:hover {
+    @apply border-accent/50 text-accent;
+}
+
+.projectClose:focus-visible {
+    @apply outline-none ring-2 ring-accent/40 ring-offset-2 ring-offset-surface;
+}
 
 .projectOpenImage {
-    @apply w-full h-64 object-cover border-b border-gold/30;
+    @apply h-64 w-full border-b border-divider object-cover;
 }
 
 .projectTextContainer {
-    @apply p-6 flex flex-col;
+    @apply flex flex-col p-6;
 }
 
 .projectCardTitle {
-    @apply mb-3 text-3xl font-quattroregular text-gold;
+    @apply mb-3 font-sans text-3xl font-medium text-foreground;
 }
 
 .projectCardDetails {
-    @apply mb-6 text-base font-loraregular leading-relaxed text-textLight whitespace-pre-line;
+    @apply mb-6 whitespace-pre-line font-sans text-base leading-relaxed text-muted;
 }
 
 .projectLinks {
-    @apply mt-auto flex gap-4;
+    @apply mt-auto flex gap-3;
 }
 
 .projectLinkIcon {
-    @apply w-10 h-10 flex items-center justify-center rounded-full bg-gold text-navy;
+    @apply flex h-10 w-10 items-center justify-center rounded-md border border-divider text-muted transition-colors duration-200;
 }
 
-    .projectLinkIcon:hover {
-        @apply bg-softGold scale-110 shadow-md transition-all duration-200;
-    }
+.projectLinkIcon:hover {
+    @apply border-accent/50 bg-white/5 text-accent;
+}
+
+.projectLinkIcon:focus-visible {
+    @apply outline-none ring-2 ring-accent/40 ring-offset-2 ring-offset-surface;
+}
 
 @media (max-width: 1024px) {
     .projectTitle {
@@ -80,7 +93,7 @@
     }
 
     .projectOpen {
-        @apply p-2;
+        @apply p-3;
     }
 
     .projectOpenCard {
@@ -102,19 +115,11 @@
     .projectCardDetails {
         @apply mb-4 text-sm;
     }
-
-    .projectLinks {
-        @apply gap-2;
-    }
-
-    .projectLinkIcon {
-        @apply w-8 h-8;
-    }
 }
 
 @media (max-width: 768px) {
     .projectTitle {
-        @apply text-sm;
+        @apply text-base;
     }
 
     .projectTagline {
@@ -122,11 +127,7 @@
     }
 
     .projectTags {
-        @apply mt-1 mb-2;
-    }
-
-    .projectOpen {
-        @apply p-1;
+        @apply mb-2 mt-2;
     }
 
     .projectOpenCard {
@@ -137,12 +138,8 @@
         @apply mb-1 text-xl;
     }
 
-    .projectLinkIcon {
-        @apply w-6 h-6;
+    .projectLinkIcon svg {
+        width: 18px;
+        height: 18px;
     }
-        .projectLinkIcon svg {
-            width: 18px;
-            height: 18px;
-        }
-
 }

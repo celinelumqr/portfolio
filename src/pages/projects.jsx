@@ -8,6 +8,18 @@ function Projects() {
     const projects = [
         
         {
+            title: "Bite Club",
+            tagline: "YOU TURNED MY ROOM INTO A WHAT???",
+            tags: ["Unity", "C#", "Game Jam", "Programming", "Game Design"],
+            thumbnail: require("../static/images/bite-club.png"),
+            details: `Bite Club is a vampire boxing game where you play as Countess Darcy, returning home for her first summer break from college only to discover that her brother, Count Drake, has turned her childhood bedroom into an underground boxing ring. To win her room back, Darcy must fight her way through Drake's best fighters before challenging him in the final match. Combat combines timing-based punch combos with directional dodging, while being knocked down triggers a countdown challenge where players must click numbered targets in descending order before time runs out.
+
+Developed for the GMTK Game Jam 2026 as part of a two-person team. I was responsible for all programming, including the rhythm-based combat, dodging, enemy behaviour, UI, and knockdown recovery systems. The game design was a collaborative effort, including the premise, characters, and core combat mechanics.`,
+            links: {
+                itch: "https://foraii.itch.io/bite-club"
+            }
+        },
+        {
             title: "Scop, Sing Us a Song",
             tagline: "The fire waits. The king is gone. Your voice is all that remains.",
             tags: ["Twine", "HTML", "CSS", "JavaScript", "Narrative Design"],
@@ -119,9 +131,13 @@ As a game design intern, I supported combat design by researching source materia
 
     return (
         <div className={styles.projectsBody}>
-            <h1 className={styles.header}>
-                The Forest of a Thousand Stars
-            </h1>
+            <h2 className={styles.header}>
+                Projects
+            </h2>
+
+            <p className={styles.intro}>
+                Projects across game design, narrative systems, and gameplay programming.
+            </p>
 
             <div className={styles.filters}>
                 {["All", "Game Design", "Narrative Design", "Programming"].map((category) => (
@@ -129,6 +145,7 @@ As a game design intern, I supported combat design by researching source materia
                         key={category}
                         className={`${styles.filterButton} ${filter === category ? styles.activeFilter : ""
                             }`}
+                        aria-pressed={filter === category}
                         onClick={() => setFilter(category)}
                     >
                         {category}

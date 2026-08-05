@@ -1,79 +1,66 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
-
 .navbar {
-    @apply fixed top-0 z-10 flex items-center justify-between w-full px-5 pt-3 pb-3 bg-navy bg-opacity-50 font-quattroregular;
+    @apply sticky top-0 z-10 w-full border-b border-divider bg-surface/90 font-sans backdrop-blur-md;
 }
 
-.navbarLeft {
-    @apply flex items-center text-4xl text-gold pl-8;
+.navbarInner {
+    @apply mx-auto grid w-full max-w-7xl grid-cols-[1fr_auto_1fr] items-center px-8 py-4;
 }
 
-.navbarLogo {
-    @apply h-14;
+.name {
+    @apply justify-self-start text-base font-medium text-foreground no-underline transition-opacity duration-200;
 }
 
-.navbarRight {
-    @apply flex flex-row items-center justify-around text-left ml-auto;
+.name:hover {
+    @apply opacity-80;
+}
+
+.navigation {
+    @apply flex items-center justify-center gap-8;
 }
 
 .navbarLink {
-    @apply px-6 text-lg font-bold text-gold no-underline transition-colors duration-300;
+    @apply text-sm text-muted no-underline transition-colors duration-200;
 }
 
-    .navbarLink:hover {
-        @apply text-softGold;
-    }
-
-@media (max-width: 900px) {
-    .navbarBrand {
-        @apply h-10 text-2xl;
-    }
+.navbarLink:hover {
+    @apply text-foreground;
 }
 
-@media (max-width: 820px) {
-    .navbarLogo {
-        @apply h-10;
-    }
+.resumeLink {
+    @apply justify-self-end border-b border-muted pb-0.5 text-sm text-foreground no-underline transition-colors duration-200;
+}
 
-    .navbarBrand {
-        @apply text-xl;
-    }
+.resumeLink:hover {
+    @apply border-accent text-accent;
+}
 
-    .navbarLink {
-        @apply px-4 text-base;
-    }
+.name:focus-visible,
+.navbarLink:focus-visible,
+.resumeLink:focus-visible {
+    @apply rounded-sm outline-none ring-2 ring-accent/40 ring-offset-2 ring-offset-surface;
 }
 
 @media (max-width: 670px) {
-    .navbar {
-        @apply flex-col items-center py-5;
+    .navbarInner {
+        @apply grid-cols-[1fr_auto] gap-y-4 px-5 py-4;
     }
 
-    .navbarLeft {
-        @apply ml-0;
-    }
-
-    .navbarBrand {
-        @apply mt-2 order-last;
-    }
-
-    .navbarRight {
-        @apply mr-0 mt-5;
-    }
-
-    .navbarLink {
-        @apply text-sm;
+    .navigation {
+        @apply col-span-2 row-start-2 gap-6;
     }
 }
 
 @media (max-width: 420px) {
-    .navbarBrand {
-        @apply text-base;
+    .navbarInner {
+        @apply px-4;
     }
 
-    .navbarLink {
-        @apply px-2;
+    .navigation {
+        @apply gap-5;
+    }
+
+    .navbarLink,
+    .resumeLink {
+        @apply text-xs;
     }
 }

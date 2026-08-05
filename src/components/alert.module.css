@@ -1,28 +1,71 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
-
-.alert {
-    @apply fixed inset-0 z-50 flex justify-center items-center animate-fadeInOut;
+.alertContainer {
+    @apply fixed bottom-6 right-6 z-50 pointer-events-none;
 }
 
-.success,
-.failure {
-    @apply flex items-center gap-3 backdrop-blur-md rounded-xl px-6 py-4 border text-textLight shadow-lg;
+.alert {
+    @apply relative flex w-full max-w-sm items-start gap-3 rounded-md border border-white/10 bg-surface px-4 py-4 text-foreground shadow-lg pointer-events-auto;
+    animation: toastLife var(--alert-duration) ease forwards;
 }
 
 .success {
-    @apply border-green bg-green/10 shadow-green/30;
+    @apply border-l-2 border-l-success;
 }
 
 .failure {
-    @apply border-red bg-red/10 shadow-red/30;
+    @apply border-l-2 border-l-error;
 }
 
-.text {
-    @apply font-loraregular font-medium text-base tracking-wide text-center;
+.statusIcon {
+    @apply mt-0.5 flex-shrink-0 text-xl;
 }
 
-icon {
-    @apply flex-shrink-0 text-2xl;
+.success .statusIcon {
+    @apply text-success;
+}
+
+.failure .statusIcon {
+    @apply text-error;
+}
+
+.content {
+    @apply min-w-0 flex-1 pr-5 text-left;
+}
+
+.title {
+    @apply m-0 font-sans text-sm font-medium text-foreground;
+}
+
+.message {
+    @apply mb-0 mt-1 font-sans text-sm leading-relaxed text-muted;
+}
+
+.emailLink {
+    @apply mt-2 inline-block font-sans text-sm text-accent underline underline-offset-4 transition-opacity;
+}
+
+.emailLink:hover {
+    @apply opacity-80;
+}
+
+.closeButton {
+    @apply absolute right-3 top-3 flex h-7 w-7 items-center justify-center text-lg text-muted transition-colors;
+}
+
+.closeButton:hover {
+    @apply text-foreground;
+}
+
+@keyframes toastLife {
+    0% { opacity: 0; transform: translateY(12px); }
+    8%, 88% { opacity: 1; transform: translateY(0); }
+    100% { opacity: 0; transform: translateY(8px); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .alert { animation: none; }
+}
+
+@media (max-width: 640px) {
+    .alertContainer { @apply bottom-4 left-4 right-4; }
+    .alert { @apply max-w-none; }
 }

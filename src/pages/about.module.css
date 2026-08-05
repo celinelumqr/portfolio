@@ -1,83 +1,66 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
-
 .page {
-    @apply w-screen h-screen flex flex-col justify-center items-center bg-portfolio bg-center bg-cover bg-no-repeat;
+    @apply flex min-h-screen w-full items-center bg-canvas;
 }
 
 .aboutBody {
-    @apply w-full max-w-6xl mx-auto px-8;
+    @apply mx-auto w-full max-w-5xl px-8 py-24;
 }
 
 .header {
-    @apply text-6xl font-quattroregular font-medium text-gold mb-8 text-center;
+    @apply mb-10 text-left font-sans text-5xl font-medium text-foreground;
 }
 
 .content {
-    @apply w-full flex flex-row justify-center items-center gap-8 mb-8;
+    @apply w-full;
 }
 
 .bodyText {
-    @apply flex flex-col flex-1 bg-black bg-opacity-25 p-0 rounded-2xl;
+    @apply flex max-w-3xl flex-col gap-6;
 }
 
 .paragraph {
-    @apply text-base font-loraregular font-medium pt-2 text-textLight text-justify;
+    @apply m-0 text-left font-sans text-base leading-8 text-muted;
 }
 
-.aboutImage {
-    @apply flex justify-center items-start shrink-0;
+.paragraph:first-child {
+    @apply text-lg text-foreground;
 }
 
-.avatar {
-    @apply w-auto max-h-[35vh];
+.details {
+    @apply mt-2 grid max-w-3xl grid-cols-2 gap-6 border-t border-divider pt-7;
 }
 
-.skills {
-    @apply grid grid-cols-3 gap-6 text-center justify-center mx-auto;
+.detail {
+    @apply m-0;
 }
 
-.skillItem {
-    @apply flex flex-col items-center gap-2 font-loraregular text-textLight;
+.detail dt {
+    @apply mb-2 font-sans text-xs font-semibold uppercase tracking-[0.16em] text-accent;
 }
 
-.skillIcon {
-    @apply w-8 h-8 text-gold;
-}
-
-@media (max-width: 1024px) {
-    .header {
-        @apply text-5xl;
-    }
-
-    .avatar {
-        @apply max-h-[30vh];
-    }
+.detail dd {
+    @apply m-0 font-sans text-sm leading-6 text-muted;
 }
 
 @media (max-width: 768px) {
-    .header {
-        @apply text-4xl;
-    }
-
-    .avatar {
-        @apply max-h-[25vh];
-    }
-
-    .paragraph {
-        @apply text-sm;
-    }
-
-    .skillItem {
-        @apply text-sm;
-    }
-
-    .skillIcon {
-        @apply w-6 h-6;
-    }
-
     .aboutBody {
-        @apply px-12;
+        @apply px-5 py-16;
+    }
+
+    .header {
+        @apply mb-8 text-4xl;
+    }
+
+    .bodyText {
+        @apply gap-5;
+    }
+
+    .paragraph,
+    .paragraph:first-child {
+        @apply text-base leading-7;
+    }
+
+    .details {
+        @apply grid-cols-1 gap-5 pt-6;
     }
 }

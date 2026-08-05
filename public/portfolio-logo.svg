@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-labelledby="title desc">
+  <title id="title">Celine Lum monogram</title>
+  <desc id="desc">Warm white CL initials on a charcoal rounded square.</desc>
+  <rect width="512" height="512" rx="96" fill="#111318"/>
+  <text
+    x="256"
+    y="318"
+    fill="#F2F0EA"
+    font-family="Georgia, 'Times New Roman', serif"
+    font-size="230"
+    font-weight="700"
+    letter-spacing="-24"
+    text-anchor="middle"
+  >CL</text>
+  <rect x="391" y="386" width="38" height="8" rx="4" fill="#8FA8FF"/>
+</svg>

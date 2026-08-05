@@ -1,75 +1,87 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
-
 .landing {
-    @apply flex flex-col items-center justify-center h-screen w-screen bg-center bg-cover bg-no-repeat bg-portfolio;
-}
-
-.landingAvatar {
-    @apply w-auto max-h-[30vh];
+    @apply flex w-full items-center bg-canvas;
+    min-height: calc(100svh - var(--navbar-height));
 }
 
 .landingText {
-    @apply flex flex-col items-center text-center p-8;
+    @apply mx-auto flex w-full max-w-5xl flex-col items-start px-8 py-24 text-left;
 }
 
-.landingTagline {
-    @apply text-6xl font-quattroregular font-medium text-gold;
+.eyebrow {
+    @apply mb-6 font-sans text-xs font-medium uppercase tracking-[0.14em] text-accent;
 }
 
-.landingRoles {
-    @apply py-6 text-3xl font-loraregular font-medium text-textLight;
+.name {
+    @apply m-0 font-sans text-6xl font-medium tracking-tight text-foreground;
 }
 
-.links {
-    @apply mt-6 flex flex-row;
+.statement {
+    @apply mb-0 mt-8 max-w-3xl font-serif text-4xl font-normal leading-tight tracking-tight text-foreground;
 }
 
-.skills {
-    @apply grid grid-cols-3 gap-6 text-center justify-center mx-auto;
+.summary {
+    @apply mb-0 mt-5 max-w-2xl font-sans text-lg leading-8 text-muted;
 }
 
-.skillItem {
-    @apply flex flex-col items-center gap-2 font-loraregular text-textLight;
+.actions {
+    @apply mt-10 flex flex-wrap gap-3;
 }
 
-.skillIcon {
-    @apply w-8 h-8 text-gold;
+.primaryAction,
+.secondaryAction {
+    @apply inline-flex items-center justify-center rounded-md px-6 py-3 font-sans text-sm font-medium no-underline;
 }
 
-@media (max-width: 900px) {
-    .landingAvatar {
-        @apply mt-24 max-h-[25vh];
-    }
-
-    .landingTagline {
-        @apply text-4xl;
-    }
+.primaryAction {
+    @apply bg-foreground text-canvas transition-opacity duration-200;
 }
 
-@media (max-width: 670px) {
-    .landingAvatar {
-        @apply mt-24 max-h-[20vh];
-    }
+.primaryAction:hover {
+    @apply opacity-85;
+}
 
+.secondaryAction {
+    @apply border border-divider text-foreground transition-colors duration-200;
+}
+
+.secondaryAction:hover {
+    @apply border-accent/50 bg-white/5 text-accent;
+}
+
+.primaryAction:focus-visible,
+.secondaryAction:focus-visible {
+    @apply outline-none ring-2 ring-accent/40 ring-offset-2 ring-offset-canvas;
+}
+
+@media (max-width: 768px) {
     .landingText {
-        @apply py-0;
+        @apply px-5 py-16;
     }
 
-    .landingRoles {
-        @apply text-sm;
+    .eyebrow {
+        @apply leading-6 tracking-[0.08em];
     }
 
-    .links {
-        @apply justify-center;
+    .name {
+        @apply text-5xl;
     }
 
-    .skillItem {
-        @apply text-sm;
+    .statement {
+        @apply mt-6 text-3xl;
     }
 
-    .skillIcon {
-        @apply w-6 h-6;
+    .summary {
+        @apply text-base leading-7;
+    }
+}
+
+@media (max-width: 480px) {
+    .actions {
+        @apply w-full flex-col;
+    }
+
+    .primaryAction,
+    .secondaryAction {
+        @apply w-full;
     }
 }

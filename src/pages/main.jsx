@@ -1,42 +1,37 @@
 import styles from "./main.module.css";
-import Link from "../components/link"
-import { CiMail } from "react-icons/ci";
-import { FaGithub, FaLinkedin } from "react-icons/fa";
-import { IoGameController } from "react-icons/io5";
-import { FaCode, FaPenFancy } from "react-icons/fa";
 
 function Main() {
     return (
         <div className={styles.landing}>
-            <img
-                className={styles.landingAvatar}
-                src={require("../static/images/moonforest-logo.png")}
-                alt="home"
-            />
             <div className={styles.landingText}>
-                <h1 className={styles.landingTagline}>
-                    Celine Lum
-                </h1>
-                <p className={styles.landingRoles}>
-                    Worlds Etched in Starlight
+                <p className={styles.eyebrow}>
+                    Game Designer <span aria-hidden="true">·</span>{" "}
+                    Narrative Designer <span aria-hidden="true">·</span>{" "}
+                    Programmer
                 </p>
-                <div className={styles.skills}>
-                    <div className={styles.skillItem}>
-                        <IoGameController className={styles.skillIcon} />
-                        <span>Game Design</span>
-                    </div>
-                    <div className={styles.skillItem}>
-                        <FaPenFancy className={styles.skillIcon} />
-                        <span>Narrative Design</span>
-                    </div>
-                    <div className={styles.skillItem}>
-                        <FaCode className={styles.skillIcon} />
-                        <span>Programming</span>
-                    </div>
+
+                <h1 className={styles.name}>Celine Lum</h1>
+
+                <p className={styles.statement}>
+                    I create games where story, mechanics, and player choice shape each other.
+                </p>
+
+                <p className={styles.summary}>
+                    My work spans gameplay systems, interactive narrative, rapid prototyping,
+                    and production game design.
+                </p>
+
+                <div className={styles.actions}>
+                    <a href="#projects" className={styles.primaryAction}>
+                        View projects
+                    </a>
+                    <a href="#contact" className={styles.secondaryAction}>
+                        Get in touch
+                    </a>
                 </div>
             </div>
         </div>
-    )
+    );
 }
 
-export default Main
+export default Main;

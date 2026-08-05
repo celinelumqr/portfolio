@@ -1,49 +1,53 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
-
 .projectsBody {
-    @apply flex flex-col items-center justify-center w-screen py-4 bg-portfolio bg-center bg-repeat-y;
+    @apply flex min-h-screen w-full flex-col items-center bg-canvas px-8 py-24;
 }
 
 .header {
-    @apply flex justify-center mt-28 mb-8 text-center text-6xl font-quattroregular font-medium text-gold;
+    @apply mb-4 w-full max-w-7xl text-left font-sans text-5xl font-medium text-foreground;
+}
+
+.intro {
+    @apply mb-8 w-full max-w-7xl text-left font-sans text-base leading-7 text-muted;
 }
 
 .filters {
-    @apply flex gap-4 mb-6;
+    @apply mb-8 flex w-full max-w-7xl flex-wrap gap-2;
 }
 
 .filterButton {
-    @apply px-4 py-2 rounded-lg bg-midnight text-gold font-loraregular transition-colors duration-200;
+    @apply rounded-md border border-divider bg-surface px-4 py-2 font-sans text-sm text-muted transition-colors duration-200;
 }
 
-    .filterButton:hover,
-    .activeFilter {
-        @apply bg-gold text-navy;
-    }
+.filterButton:hover {
+    @apply border-accent/50 text-accent;
+}
+
+.activeFilter,
+.activeFilter:hover {
+    @apply border-foreground bg-foreground text-canvas;
+}
+
+.filterButton:focus-visible {
+    @apply outline-none ring-2 ring-accent/40 ring-offset-2 ring-offset-canvas;
+}
 
 .projectsGrid {
-    @apply grid grid-cols-3 gap-6 px-8;
+    @apply grid w-full max-w-7xl grid-cols-3 gap-6;
 }
 
 @media (max-width: 1024px) {
-    .header {
-        @apply text-5xl;
-    }
-
     .projectsGrid {
         @apply grid-cols-2;
     }
 }
 
 @media (max-width: 768px) {
-    .header {
-        @apply text-4xl;
+    .projectsBody {
+        @apply px-5 py-16;
     }
 
-    .filterButton {
-        @apply text-sm;
+    .header {
+        @apply text-4xl;
     }
 
     .projectsGrid {

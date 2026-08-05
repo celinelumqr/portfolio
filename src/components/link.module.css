@@ -1,19 +1,11 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
-
-.linkContainer {
-    @apply flex flex-col justify-between items-center w-16 h-16 mr-4 rounded-lg border-2 border-gold transition-all duration-700;
+.link {
+    @apply flex h-11 w-11 flex-shrink-0 items-center justify-center rounded-md border border-white/10 text-muted transition-colors duration-200;
 }
 
-    .linkContainer:hover {
-        @apply bg-gold; 
-    }
-
-.image {
-    @apply flex justify-center items-center h-full text-gold scale-75 transition-all duration-700;
+.link:hover {
+    @apply border-accent/50 bg-white/5 text-accent;
 }
 
-    .linkContainer:hover .image {
-        @apply text-softGold;
-    }
+.link:focus-visible {
+    @apply border-accent outline-none ring-2 ring-accent/40 ring-offset-2 ring-offset-surface;
+}

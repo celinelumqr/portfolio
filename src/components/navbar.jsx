@@ -3,21 +3,32 @@ import styles from "./navbar.module.css";
 
 function Navbar() {
     return (
-        <nav className={styles.navbar}>
-            <span className={styles.navbarRight}>
-                <a href='#main' className={styles.navbarLink}>
-                    Home
+        <nav className={styles.navbar} aria-label="Primary navigation">
+            <div className={styles.navbarInner}>
+                <a href="#home" className={styles.name}>
+                    Celine Lum
                 </a>
-                <a href='#about' className={styles.navbarLink}>
-                    About
+                <div className={styles.navigation}>
+                    <a href="#about" className={styles.navbarLink}>
+                        About
+                    </a>
+                    <a href="#projects" className={styles.navbarLink}>
+                        Work
+                    </a>
+                    <a href="#contact" className={styles.navbarLink}>
+                        Contact
+                    </a>
+                </div>
+
+                <a
+                    href={`${process.env.PUBLIC_URL}/resume.pdf`}
+                    className={styles.resumeLink}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >
+                    Resume <span aria-hidden="true">↗</span>
                 </a>
-                <a href='#projects' className={styles.navbarLink}>
-                    Projects
-                </a>
-                <a href='#contact' className={styles.navbarLink}>
-                    Contact
-                </a>
-            </span>
+            </div>
         </nav>
     );
 }

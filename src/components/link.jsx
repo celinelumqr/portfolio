@@ -1,14 +1,16 @@
 import React from "react";
 import styles from "./link.module.css";
 
-function Link({ link, children }) {
+function Link({ href, label, external = false, children }) {
     return (
-        <a href={link}
-            target="_blank"
-            rel="noopener noreferrer">
-            <div className={styles.linkContainer}>
-                <div className={styles.image}>{children}</div>
-            </div>
+        <a
+            href={href}
+            aria-label={label}
+            className={styles.link}
+            target={external ? "_blank" : undefined}
+            rel={external ? "noopener noreferrer" : undefined}
+        >
+            {children}
         </a>
     );
 }
