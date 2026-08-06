@@ -1,31 +1,50 @@
 import styles from "./experience.module.css";
 
 function Experience() {
-    const highlights = [
-        { label: "Garena", value: "Game Developer · 2025" },
-        { label: "Mighty Bear Games", value: "Game Design Intern · 2020–21" },
-        { label: "Shipped titles", value: "2 Apple Arcade games" },
-        { label: "Prototyping", value: "Roblox · Unity · C++" },
+    const roles = [
+        {
+            company: "Garena",
+            title: "Game Developer (GRIT Trainee)",
+            dates: "Feb 2025–Aug 2025",
+            description:
+                "Prototyped social multiplayer game concepts in Roblox and Unity through rapid two-week development sprints, contributing across game design and programming.",
+        },
+        {
+            company: "Mighty Bear Games",
+            title: "Game Design Intern",
+            dates: "Jul 2020–Jun 2021",
+            description:
+                "Contributed to game design, documentation, playtesting, and early prototyping across two shipped Apple Arcade titles.",
+        },
     ];
 
     return (
         <section className={styles.experience} aria-labelledby="experience-heading">
             <div className={styles.inner}>
                 <div className={styles.intro}>
-                    <p className={styles.eyebrow}>Industry experience</p>
+                    <p className={styles.eyebrow}>Professional experience</p>
                     <h2 id="experience-heading" className={styles.heading}>
-                        From rapid prototypes to shipped games.
+                        Experience
                     </h2>
+                    <p className={styles.summary}>
+                        Roles across rapid prototyping and production game design.
+                    </p>
                 </div>
 
-                <dl className={styles.highlights}>
-                    {highlights.map((highlight) => (
-                        <div key={highlight.label} className={styles.highlight}>
-                            <dt className={styles.label}>{highlight.label}</dt>
-                            <dd className={styles.value}>{highlight.value}</dd>
-                        </div>
+                <div className={styles.roles}>
+                    {roles.map((role) => (
+                        <article key={role.company} className={styles.role}>
+                            <div className={styles.roleHeader}>
+                                <div>
+                                    <h3 className={styles.title}>{role.title}</h3>
+                                    <p className={styles.company}>{role.company}</p>
+                                </div>
+                                <p className={styles.dates}>{role.dates}</p>
+                            </div>
+                            <p className={styles.description}>{role.description}</p>
+                        </article>
                     ))}
-                </dl>
+                </div>
             </div>
         </section>
     );
