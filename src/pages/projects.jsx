@@ -18,7 +18,7 @@ Each story choice shapes the tone of the funeral, from glorified legend to quiet
 
 Designed, written, and programmed entirely in Twine with custom HTML, CSS, and JavaScript, this was the culminating project of a Digital Humanities minor, built around the theme of the permanence of impermanence as explored through Beowulf.`,
             links: {
-                itch: "https://moon-forest.itch.io/scop-sing-us-a-song"
+                itch: "https://serenecaelum.itch.io/scop-sing-us-a-song"
             }
         },
         {
@@ -30,7 +30,7 @@ Designed, written, and programmed entirely in Twine with custom HTML, CSS, and J
 
 Three endings emerge from player choices and hidden variable tracking. While two endings follow explicit narrative branches, the third is triggered by accumulated actions that agitate Iris, ultimately stripping the player of control. This mechanical loss of agency is central to the narrative's exploration of control and complicity. Custom styling, including colour-coded text, timed effects, and sound design, reinforces the disorientation as the truth becomes apparent.`,
             links: {
-                itch: "https://moon-forest.itch.io/iris"
+                itch: "https://serenecaelum.itch.io/iris"
             }
         },
         {
