@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/portfolio/static/css/main.4156a257.css",
-    "main.js": "/portfolio/static/js/main.81e3cfbc.js",
+    "main.js": "/portfolio/static/js/main.1515fd04.js",
     "static/media/mirrors-memento.png": "/portfolio/static/media/mirrors-memento.a62f52c6939c21d3187d.png",
     "static/media/scop-sing-us-a-song.png": "/portfolio/static/media/scop-sing-us-a-song.6549d6cf7ca03c55043b.png",
     "static/media/anamnesis.png": "/portfolio/static/media/anamnesis.43b6a5b4075efba0a82b.png",
@@ -14,10 +14,10 @@
     "static/media/golfers-galaxy.png": "/portfolio/static/media/golfers-galaxy.f25f94c16051dfa0ca8f.png",
     "index.html": "/portfolio/index.html",
     "main.4156a257.css.map": "/portfolio/static/css/main.4156a257.css.map",
-    "main.81e3cfbc.js.map": "/portfolio/static/js/main.81e3cfbc.js.map"
+    "main.1515fd04.js.map": "/portfolio/static/js/main.1515fd04.js.map"
   },
   "entrypoints": [
     "static/css/main.4156a257.css",
-    "static/js/main.81e3cfbc.js"
+    "static/js/main.1515fd04.js"
   ]
 }
