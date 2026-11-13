@@ -5,7 +5,7 @@ function Experience() {
         {
             company: "Garena",
             title: "Game Developer (GRIT Trainee)",
-            dates: "Feb 2025–Aug 2025",
+            dates: "Feb 2026–Aug 2026",
             description:
                 "Prototyped social multiplayer game concepts in Roblox and Unity through rapid two-week development sprints, contributing across game design and programming.",
         },
