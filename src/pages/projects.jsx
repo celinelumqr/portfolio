@@ -8,25 +8,13 @@ function Projects() {
     const projects = [
         
         {
-            title: "Bite Club",
-            tagline: "YOU TURNED MY ROOM INTO A WHAT???",
-            tags: ["Unity", "C#", "Game Jam", "Programming", "Game Design"],
-            thumbnail: require("../static/images/bite-club.png"),
-            details: `Bite Club is a vampire boxing game where you play as Countess Darcy, returning home for her first summer break from college only to discover that her brother, Count Drake, has turned her childhood bedroom into an underground boxing ring. To win her room back, Darcy must fight her way through Drake's best fighters before challenging him in the final match. Combat combines timing-based punch combos with directional dodging, while being knocked down triggers a countdown challenge where players must click numbered targets in descending order before time runs out.
-
-Developed for the GMTK Game Jam 2026 as part of a two-person team. I was responsible for all programming, including the rhythm-based combat, dodging, enemy behaviour, UI, and knockdown recovery systems. The game design was a collaborative effort, including the premise, characters, and core combat mechanics.`,
-            links: {
-                itch: "https://foraii.itch.io/bite-club"
-            }
-        },
-        {
             title: "Scop, Sing Us a Song",
             tagline: "The fire waits. The king is gone. Your voice is all that remains.",
             tags: ["Twine", "HTML", "CSS", "JavaScript", "Narrative Design"],
             thumbnail: require("../static/images/scop-sing-us-a-song.png"),
             details: `Set during Beowulf's funeral, Scop, Sing Us a Song explores impermanence through the lens of oral storytelling and memory. You play as a scop (an Old English poet) tasked with recounting stories of the fallen king before the fire burns out. What is remembered, and how it is remembered, shifts with every playthrough.
 
-Each story choice shapes the tone of the funeral, from glorified legend to quiet lament. Two interlocking systems, "forgotten stories" and "forgotten names", ensure that tales told often grow stronger in memory while others fade, mechanically mirroring the fragility of legacy itself.
+Each story choice shapes the tone of the funeral, from glorified legend to quiet lament. Two interlocking systems, "forgotten stories" and "forgotten names", track storytelling choices across playthroughs. Frequently retold stories become more likely to appear as future options, while neglected stories fade and characters gradually lose their names, mechanically mirroring the fragility of oral tradition.
 
 Designed, written, and programmed entirely in Twine with custom HTML, CSS, and JavaScript, this was the culminating project of a Digital Humanities minor, built around the theme of the permanence of impermanence as explored through Beowulf.`,
             links: {
@@ -40,9 +28,21 @@ Designed, written, and programmed entirely in Twine with custom HTML, CSS, and J
             thumbnail: require("../static/images/iris.png"),
             details: `Iris is a short interactive narrative where players assume the role of a young girl trying to escape a mysterious facility... or so they think. The game initially presents itself as a straightforward escape story, but subtle visual glitches and contradictions slowly reveal that the player is not who they think they are.
 
-Three branching endings emerge from the player's choices, each reframing the question of agency and complicity differently. Custom styling, including colour-coded text, timed effects, and sound design, reinforces the disorientation as the truth becomes apparent.`,
+Three endings emerge from player choices and hidden variable tracking. While two endings follow explicit narrative branches, the third is triggered by accumulated actions that agitate Iris, ultimately stripping the player of control. This mechanical loss of agency is central to the narrative's exploration of control and complicity. Custom styling, including colour-coded text, timed effects, and sound design, reinforces the disorientation as the truth becomes apparent.`,
             links: {
                 itch: "https://moon-forest.itch.io/iris"
+            }
+        },
+        {
+            title: "Bite Club",
+            tagline: "YOU TURNED MY ROOM INTO A WHAT???",
+            tags: ["Unity", "C#", "Game Jam", "Programming", "Game Design"],
+            thumbnail: require("../static/images/bite-club.png"),
+            details: `Bite Club is a vampire boxing game where you play as Countess Darcy, returning home for her first summer break from college only to discover that her brother, Count Drake, has turned her childhood bedroom into an underground boxing ring. To win her room back, Darcy must fight her way through Drake's best fighters before challenging him in the final match. Combat combines timing-based punch combos with directional dodging, while being knocked down triggers a countdown challenge where players must click numbered targets in descending order before time runs out.
+
+Developed for the GMTK Game Jam 2026 as part of a two-person team. I was responsible for all programming, including the rhythm-based combat, dodging, enemy behaviour, UI, and knockdown recovery systems. The game design was a collaborative effort, including the premise, characters, and core combat mechanics.`,
+            links: {
+                itch: "https://foraii.itch.io/bite-club"
             }
         },
         {
